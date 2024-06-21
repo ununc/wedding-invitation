@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
-import { Section } from "../components/Section";
-import useIntersectionObserver from "../hooks/useIntersectionObserver";
-import Video from "/intro/intros.mp4";
+import { useEffect, useRef } from 'react';
+import { Section } from '../components/Section';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import Video from '/intro/intros.mp4';
 
 export const Intro = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -21,7 +21,7 @@ export const Intro = () => {
 
   const [observe, disconnect] = useIntersectionObserver(
     () => isIntersecting(),
-    () => isNotIntersecting()
+    () => isNotIntersecting(),
   );
 
   useEffect(() => {
@@ -34,13 +34,14 @@ export const Intro = () => {
   }, []);
   return (
     <Section>
-      <video className="shrink-0" muted ref={videoRef}>
-        <source src={Video} type="video/mp4" />
-      </video>
+      <div className="min-h-[33.7rem]">
+        <video className="shrink-0" playsInline muted ref={videoRef}>
+          <source src={Video} type="video/mp4" />
+        </video>
+      </div>
       <div
         className="w-full max-h-52 p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center"
-        ref={bottomRef}
-      >
+        ref={bottomRef}>
         <div className="font-medium sm:text-lg">
           2024년 10월 9일 수요일 "한글날" 낮12:00
         </div>
