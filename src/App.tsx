@@ -8,7 +8,6 @@ function App() {
     <>
       <Intro />
       <Invitation />
-      <div className="h-4"></div>
       <Interview />
     </>
   );

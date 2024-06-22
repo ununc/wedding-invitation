@@ -22,13 +22,13 @@ export const Intro = () => {
   const [observe, disconnect] = useIntersectionObserver(
     () => isIntersecting(),
     () => isNotIntersecting(),
+    0.5,
   );
 
   useEffect(() => {
-    if (bottomRef?.current) {
-      observe(bottomRef.current);
+    if (videoRef?.current) {
+      observe(videoRef.current);
     }
-    videoRef?.current?.play();
     return () => {
       disconnect();
     };

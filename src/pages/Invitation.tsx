@@ -1,5 +1,5 @@
-import { Hana } from "../components/Hana";
-import { Section } from "../components/Section";
+import { Hana } from '../components/Hana';
+import { Section } from '../components/Section';
 
 export const Invitation = () => {
   return (
@@ -20,7 +20,7 @@ export const Invitation = () => {
           이제 단 한 번뿐인 귀한 삶을 함께하기로 약속합니다.
         </div>
         <div>겸손과 온유와 사랑으로</div>
-        <div>하나님이 기뻐하시는 가정을 만들어가게습니다.</div>
+        <div>하나님이 기뻐하시는 가정을 만들어가겠습니다.</div>
         <div className="mt-2">부부로 시작하는 첫 순간에</div>
         <div>소중한 당신을 초대하고 싶습니다.</div>
       </div>

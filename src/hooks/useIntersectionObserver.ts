@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useRef } from 'react';
 
 export default function useIntersectionObserver(
   callback: () => void,
-  reverse: () => void
+  reverse: () => void,
+  threshold = 1,
 ): [(element: HTMLElement) => void, () => void] {
   const observer = useRef(
     new IntersectionObserver(
@@ -15,8 +16,8 @@ export default function useIntersectionObserver(
           }
         });
       },
-      { threshold: 1 }
-    )
+      { threshold },
+    ),
   );
 
   const observe = (element: HTMLElement) => {
