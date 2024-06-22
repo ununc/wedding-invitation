@@ -28,6 +28,7 @@ export const Intro = () => {
     if (bottomRef?.current) {
       observe(bottomRef.current);
     }
+    videoRef?.current?.play();
     return () => {
       disconnect();
     };
