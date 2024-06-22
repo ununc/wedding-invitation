@@ -12,7 +12,7 @@ function App() {
     }, 1000);
   }, []);
   return (
-    <>
+    <div className={init ? 'h-[98%] overflow-y-hidden' : ''}>
       {init && (
         <div className="h-screen flex justify-center items-center">
           <div className="loader"></div>
@@ -21,7 +21,7 @@ function App() {
       <Intro />
       <Invitation />
       <Interview />
-    </>
+    </div>
   );
 }
 
