@@ -22,7 +22,7 @@ export const Intro = () => {
   const [observe, disconnect] = useIntersectionObserver(
     () => isIntersecting(),
     () => isNotIntersecting(),
-    0.5,
+    0.3,
   );
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export const Intro = () => {
   }, []);
   return (
     <Section>
-      <div className="min-h-[33.7rem]">
+      <div>
         <video className="shrink-0" playsInline muted ref={videoRef}>
           <source src={Video} type="video/mp4" />
         </video>
