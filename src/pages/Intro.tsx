@@ -38,6 +38,7 @@ export const Intro = () => {
         <video
           preload="auto"
           className="shrink-0"
+          poster="https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fro.pinterest.com%2Fpin%2F845269423812565235%2F&psig=AOvVaw1glLdnsn8CyDi_BYNOPbII&ust=1719237379056000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDnlrzw8YYDFQAAAAAdAAAAABAd"
           playsInline
           autoPlay
           muted
