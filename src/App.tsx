@@ -9,12 +9,12 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setInit(false);
-    }, 1000);
+    }, 1100);
   }, []);
   return (
-    <div className={init ? 'h-[98%] overflow-y-hidden' : ''}>
+    <div className={init ? 'h-screen overflow-y-hidden relative' : ''}>
       {init && (
-        <div className="h-screen flex justify-center items-center">
+        <div className="loader-wrapper">
           <div className="loader"></div>
         </div>
       )}

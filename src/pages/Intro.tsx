@@ -43,13 +43,10 @@ export const Intro = () => {
       <div
         className="w-full max-h-52 p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center"
         ref={bottomRef}>
-        <div className=" text-[16px]">
-          2024년 10월 9일 수요일 "한글날" 낮12:00
+        <div className="font-medium text-[1.1875rem] sm:text-[1.375rem]">
+          2024. 10. 09 (수) "한글날" 낮12:00
         </div>
-        <div className="font-medium sm:text-lg">
-          2024년 10월 9일 수요일 "한글날" 낮12:00
-        </div>
-        <div className="mt-1.5 sm:mt-2.5 sm:text-lg">
+        <div className="mt-3 font-medium sm:mt-4 text-[1.1875rem] sm:text-[1.375rem]">
           MJ컨벤션 5층 그랜드볼룸홀
         </div>
       </div>
