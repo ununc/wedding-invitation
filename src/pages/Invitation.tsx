@@ -74,19 +74,21 @@ export const Invitation = () => {
       </div>
 
       <div className="w-full py-8 flex justify-center items-center">
-        <div className="text-end mr-5">
-          <div className="text-zinc-500 sm:text-[1.06rem] mb-4 sm:mb-[0.6rem] ">
-            유호영 • 노정연 의 장남
+        <div className="text-end mr-5 sm:mr-7">
+          <div className="text-zinc-500 text-lg sm:text-xl mb-0.5 sm:mb-[1.125rem] ">
+            유호영 • 노정연
+            <span className="text-[0.937rem] sm:text-base">의 장남</span>
           </div>
           <div className="h-8"></div>
-          <div className="text-zinc-500 sm:text-[1.06rem] mt-1 sm:mt-4">
-            故이종성 • 김정실 의 장녀
+          <div className="text-zinc-500 text-lg sm:text-xl mt-3 sm:mt-2.5">
+            故이종성 • 김정실
+            <span className="text-[0.937rem] sm:text-base">의 장녀</span>
           </div>
         </div>
-        <div className="flex flex-col justify-end items-center mr-[1.125rem]">
-          <div className="text-center text-xl sm:text-[1.375rem]">유형철</div>
+        <div className="flex flex-col justify-end items-center mr-[1.125rem] sm:mr-5">
+          <div className="text-center text-xl sm:text-2xl">유형철</div>
           <div className="text-end py-3 sm:py-4">🩵</div>
-          <div className="text-center text-xl sm:text-[1.375rem]">이새봄</div>
+          <div className="text-center text-xl sm:text-2xl">이새봄</div>
         </div>
       </div>
     </Section>
