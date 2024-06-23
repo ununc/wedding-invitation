@@ -5,7 +5,6 @@ import Video from '/intro/intros.mp4';
 
 export const Intro = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const bottomRef = useRef<HTMLDivElement>(null);
 
   const isIntersecting = () => {
     videoRef?.current?.play();
@@ -36,13 +35,17 @@ export const Intro = () => {
   return (
     <Section>
       <div>
-        <video className="shrink-0" playsInline muted ref={videoRef}>
+        <video
+          preload="auto"
+          className="shrink-0"
+          playsInline
+          autoPlay
+          muted
+          ref={videoRef}>
           <source src={Video} type="video/mp4" />
         </video>
       </div>
-      <div
-        className="w-full max-h-52 p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center"
-        ref={bottomRef}>
+      <div className="w-full max-h-52 p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center">
         <div className="font-medium text-[1.1875rem] sm:text-[1.375rem]">
           2024. 10. 09 (수) "한글날" 낮12:00
         </div>
