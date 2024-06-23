@@ -9,15 +9,10 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setInit(false);
-    }, 1100);
+    }, 1200);
   }, []);
   return (
     <div className={init ? 'h-screen overflow-y-hidden relative' : ''}>
-      {init && (
-        <div className="loader-wrapper">
-          <div className="loader"></div>
-        </div>
-      )}
       <Intro />
       <Invitation />
       <Interview />
