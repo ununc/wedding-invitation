@@ -37,8 +37,8 @@ export const Intro = () => {
       <div>
         <video
           preload="auto"
-          className="shrink-0"
-          poster="https://www.google.co.kr/url?sa=i&url=https%3A%2F%2Fro.pinterest.com%2Fpin%2F845269423812565235%2F&psig=AOvVaw1glLdnsn8CyDi_BYNOPbII&ust=1719237379056000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDnlrzw8YYDFQAAAAAdAAAAABAd"
+          className="intro-video shrink-0"
+          poster="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/favicon.png?alt=media&token=49dbe968-36af-4da5-ba9a-fe4c3651566a"
           playsInline
           autoPlay
           muted
