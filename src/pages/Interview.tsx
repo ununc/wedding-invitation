@@ -10,6 +10,7 @@ export const Interview = () => {
           INTERVIEW
         </h2>
 
+        <div className="claymorphism w-full h-20"></div>
         <div>🩷 어떻게 처음 만나게 되었나요?</div>
         <div>💛 결혼을 결심하게 된 이유는 무엇인가요?</div>
         <div>🩵 결혼을 앞둔 소감과 각오 한 마디!</div>
