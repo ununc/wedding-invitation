@@ -44,6 +44,7 @@ export const Interview = () => {
           rightFunction={() => setModalIndex(6)}
           theme="sky"
         />
+        <div className=" h-8"></div>
       </div>
       <AnswerModal modalIndex={modalIndex} close={closeModal} />
     </Section>
