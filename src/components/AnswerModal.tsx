@@ -129,7 +129,7 @@ export const AnswerModal = ({
         </div>
         <button
           onClick={close}
-          className="close-button text-center bg-blue-600 opacity-80 text-white py-2 px-4 rounded">
+          className="close-button text-center bg-blue-600 opacity-80 text-white py-2 px-4 rounded-lg">
           닫기
         </button>
       </div>

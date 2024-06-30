@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setInit(false);
-    }, 1300);
+    }, 1500);
   }, []);
   return (
     <div className={init ? 'h-screen overflow-y-hidden relative' : ''}>

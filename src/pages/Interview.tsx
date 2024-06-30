@@ -33,6 +33,7 @@ export const Interview = () => {
           right="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/b-1.jpg?alt=media&token=bfba187b-555b-4634-8d19-c78139180fbe"
           leftFunction={() => setModalIndex(3)}
           rightFunction={() => setModalIndex(4)}
+          theme="emerald"
         />
 
         <QnAItem
@@ -41,6 +42,7 @@ export const Interview = () => {
           right="https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KMS_9738.jpg?alt=media&token=06e46b95-a0a0-48dc-b4fc-7806170683ed"
           leftFunction={() => setModalIndex(5)}
           rightFunction={() => setModalIndex(6)}
+          theme="sky"
         />
       </div>
       <AnswerModal modalIndex={modalIndex} close={closeModal} />

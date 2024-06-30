@@ -72,11 +72,6 @@
   }
 }
 
-.card-back {
-  position: relative;
-  background-image: linear-gradient(131.83deg, #fffafa 0%, #fff7f7 99.21%);
-}
-
 .light {
   position: absolute;
   top: -1rem;
