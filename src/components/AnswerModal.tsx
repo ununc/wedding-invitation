@@ -122,16 +122,18 @@ export const AnswerModal = ({
     <div className="fixed flex justify-center items-center top-0 bottom-0 left-0 right-0 h-screen w-full overflow-hidden">
       <div className="bg-appear w-[100vw] h-full bg-slate-700"></div>
       <div className="absolute h-fit w-[90%] flex flex-col items-end">
-        <div className="page-card rounded-lg w-full opacity-1 bg-white opacity-90 mb-4 p-4">
-          <div className="text-center flex flex-col gap-0.5">
+        <div className="page-card rounded-lg w-full mb-2 p-4">
+          <div className="text-center flex flex-col gap-0.5 text-neutral-700 opacity-75 text-[0.9375rem]">
             {ModalContent(modalIndex)}
           </div>
         </div>
-        <button
-          onClick={close}
-          className="close-button text-center bg-blue-600 opacity-80 text-white py-2 px-4 rounded-lg">
-          닫기
-        </button>
+        <div className="opacity-80">
+          <button
+            onClick={close}
+            className="close-button text-center font-semibold text-white py-2 px-4 rounded-lg">
+            닫기
+          </button>
+        </div>
       </div>
     </div>
   );

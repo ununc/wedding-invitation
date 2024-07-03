@@ -1,16 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { QnAItem } from '../components/QnAItem';
 import { Section } from '../components/Section';
-import { AnswerModal } from '../components/AnswerModal';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
-export const Interview = () => {
-  const [modalIndex, setModalIndex] = useState(0);
+export const Interview = ({
+  setModalIndex,
+}: {
+  setModalIndex: React.Dispatch<React.SetStateAction<number>>;
+}) => {
   const title = useRef<HTMLDivElement>(null);
-  const closeModal = () => {
-    setModalIndex(0);
-    document.body.style.overflow = 'auto';
-  };
 
   const isIntersecting = (element: React.RefObject<HTMLDivElement>) => {
     element?.current?.classList.add('appear-active');
@@ -68,8 +66,7 @@ export const Interview = () => {
         leftFunction={() => setModalIndex(5)}
         rightFunction={() => setModalIndex(6)}
       />
-      <div className=" h-8"></div>
-      <AnswerModal modalIndex={modalIndex} close={closeModal} />
+      <div className="h-10"></div>
     </Section>
   );
 };

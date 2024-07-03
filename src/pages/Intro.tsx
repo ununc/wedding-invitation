@@ -65,11 +65,11 @@ export const Intro = () => {
           <source src={Video} type="video/mp4" />
         </video>
       </div>
-      <div
-        ref={title}
-        className="w-full opacity-0 text-neutral-700 opacity-80 font-medium text-xl sm:text-2xl p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center">
-        <div>2024. 10. 09 (수) "한글날" 낮12:00</div>
-        <div className="mt-3 sm:mt-4">MJ컨벤션 5층 그랜드볼룸홀</div>
+      <div ref={title} className="opacity-0">
+        <div className="w-full text-neutral-700 opacity-80 font-medium text-xl sm:text-2xl p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center">
+          <div>2024. 10. 09 (수) "한글날" 낮12:00</div>
+          <div className="mt-3 sm:mt-4">MJ컨벤션 5층 그랜드볼룸홀</div>
+        </div>
       </div>
     </Section>
   );

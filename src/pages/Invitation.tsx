@@ -99,7 +99,7 @@ export const Invitation = () => {
           <Flower />
         </div>
       </div>
-      <div ref={bible} className="w-full opacity-0">
+      <div ref={bible} className="w-full mt-1.5 opacity-0">
         <div className="text-neutral-700 opacity-75 text-center text-[0.9375rem] sm:text-lg">
           <div className="">우리가 사랑함은</div>
           <div>그가 먼저 우리를 사랑하셨음이라</div>
