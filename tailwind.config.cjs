@@ -9,7 +9,16 @@ module.exports = {
       md: '768px',
       // => @media (min-width: 768px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        blue: {
+          950: '#17275c',
+        },
+        amber: {
+          950: '#451a03',
+        },
+      },
+    },
   },
   plugins: [],
 };
