@@ -32,18 +32,17 @@
 }
 
 .appear-active {
-  animation: fade-out 1s ease-in-out;
+  animation: fade-out 1.2s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes fade-out {
   0% {
-    transform: translateY(20%);
+    transform: translateY(2rem);
     opacity: 0;
   }
   100% {
-    transform: translateY(0%);
-
+    transform: translateY(0);
     opacity: 1;
   }
 }
