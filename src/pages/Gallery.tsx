@@ -16,7 +16,7 @@ export const Gallery = () => {
   const [observeTitle, disconnectTitle] = useIntersectionObserver(
     () => isIntersecting(title),
     () => isNotIntersecting(title),
-    1,
+    0.2,
   );
 
   useEffect(() => {

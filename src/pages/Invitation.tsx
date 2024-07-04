@@ -23,36 +23,36 @@ export const Invitation = () => {
   const [observeTitle, disconnectTitle] = useIntersectionObserver(
     () => isIntersecting(title),
     () => isNotIntersecting(title),
-    1,
+    0.2,
   );
 
   const [observeFlower, disconnectFlower] = useIntersectionObserver(
     () => isIntersecting(flower),
     () => isNotIntersecting(flower),
-    1,
+    0.2,
   );
 
   const [observe, disconnect] = useIntersectionObserver(
     () => isIntersecting(bible),
     () => isNotIntersecting(bible),
-    0.8,
+    0.2,
   );
 
   const [observe1, disconnect1] = useIntersectionObserver(
     () => isIntersecting(prase),
     () => isNotIntersecting(prase),
-    0.8,
+    0.2,
   );
 
   const [observe2, disconnect2] = useIntersectionObserver(
     () => isIntersecting(prase2),
     () => isNotIntersecting(prase2),
-    0.8,
+    0.2,
   );
   const [observe3, disconnect3] = useIntersectionObserver(
     () => isIntersecting(prase3),
     () => isNotIntersecting(prase3),
-    0.8,
+    0.2,
   );
 
   useEffect(() => {

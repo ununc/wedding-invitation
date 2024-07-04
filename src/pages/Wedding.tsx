@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Hana } from '../components/Hana';
 import { Section } from '../components/Section';
-import calendar from '/calendar.jpg';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 export const Wedding = () => {
   const title = useRef<HTMLDivElement>(null);
@@ -17,7 +15,7 @@ export const Wedding = () => {
   const [observeTitle, disconnectTitle] = useIntersectionObserver(
     () => isIntersecting(title),
     () => isNotIntersecting(title),
-    1,
+    0.2,
   );
 
   useEffect(() => {

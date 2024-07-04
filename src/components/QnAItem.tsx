@@ -27,7 +27,7 @@ export const QnAItem = ({
   const [observe, disconnect] = useIntersectionObserver(
     () => isIntersecting(qna),
     () => isNotIntersecting(qna),
-    0.5,
+    0.4,
   );
 
   useEffect(() => {

@@ -20,25 +20,25 @@ export const Info = () => {
   const [observeFlower, disconnectFlower] = useIntersectionObserver(
     () => isIntersecting(flower),
     () => isNotIntersecting(flower),
-    0.8,
+    0.2,
   );
 
   const [observeTitle, disconnectTitle] = useIntersectionObserver(
     () => isIntersecting(title),
     () => isNotIntersecting(title),
-    0.8,
+    0.2,
   );
 
   const [observeMan, disconnectMan] = useIntersectionObserver(
     () => isIntersecting(man),
     () => isNotIntersecting(man),
-    0.8,
+    0.2,
   );
 
   const [observeWoman, disconnectWoman] = useIntersectionObserver(
     () => isIntersecting(woman),
     () => isNotIntersecting(woman),
-    0.8,
+    0.2,
   );
 
   useEffect(() => {
@@ -68,17 +68,17 @@ export const Info = () => {
       </div>
       <div className="w-full mt-8">
         <div ref={flower} className="w-full opacity-0">
-          <div className="w-full mb-2 opacity-[0.55]">
+          <div className="w-full opacity-[0.55]">
             <Flower />
           </div>
         </div>
         <div ref={title} className="w-full opacity-0">
-          <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
+          <h2 className="text-sm h-12 mt-2 text-amber-950 opacity-[0.45] text-center">
             마음 전하실 곳
           </h2>
         </div>
 
-        <div className="flex flex-col justify-center items-center w-8/12 mx-auto mt-5">
+        <div className="flex flex-col justify-center items-center mt-1 w-8/12 mx-auto">
           <div ref={man} className="w-full opacity-0">
             <div className="relative w-full">
               <div className="w-full bg-amber-700 opacity-[0.08] text-center h-9 rounded-lg"></div>

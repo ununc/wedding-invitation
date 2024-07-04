@@ -36,7 +36,7 @@ export const Intro = () => {
   const [observe1, disconnect1] = useIntersectionObserver(
     () => isIntersecting1(title),
     () => isNotIntersecting1(title),
-    0.8,
+    0.2,
   );
 
   useEffect(() => {
