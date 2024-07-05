@@ -36,12 +36,38 @@ export const Wedding = () => {
           오시는 길
         </h2>
       </div>
-      <div className="mt-8 h-fit w-[85%]"></div>
-      <div className="mt-8 border border-green-700 h-48 w-[85%]">
-        네이버 지도 및 카카오 지도 링크 작업
+      <div className="mt-4 h-fit w-full">
+        <div className="map h-48 opacity-[0.95]"></div>
       </div>
       <div className="mt-8 border border-green-700 h-48 w-[85%]">
-        교통편 버스 지하철 승용차
+        <div>
+          <div>주소</div>
+          <div>경기도 부천시 소사구 경인로 386 (소사본동 65-7)</div>
+          <div>MJ컨벤션 5층 그랜드볼룸홀</div>
+        </div>
+        <div>
+          <div>전화</div>
+          <div>032-347-5500</div>
+        </div>
+      </div>
+      <div>
+        <div className="flex justify-between w-60 items-center mx-auto">
+          <div className="map-icon opacity-[0.85] cursor-pointer">
+            <a href="https://naver.me/Fgivzc56">
+              <div className="naver w-full h-full"></div>
+            </a>
+          </div>
+          <div className="map-icon opacity-[0.85] cursor-pointer">
+            <a href="https://m.map.kakao.com/actions/detailMapView?id=27339651&refService=place">
+              <div className="kakao w-full h-full"></div>
+            </a>
+          </div>
+          <div className="map-icon opacity-[0.85] cursor-pointer">
+            <a href="https://naver.me/Fgivzc56">
+              <div className="tmap w-full h-full"></div>
+            </a>
+          </div>
+        </div>
       </div>
       <div className=" h-8"></div>
     </Section>

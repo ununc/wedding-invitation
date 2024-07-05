@@ -10,6 +10,30 @@
   font-style: normal;
 }
 
+* {
+  font-family: 'RIDIBatang';
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -106,26 +130,42 @@
   }
 }
 
-* {
-  font-family: 'RIDIBatang';
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.map {
+  width: 100%;
+  background-image: url('/location-big.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-*::-webkit-scrollbar {
-  background-color: transparent;
-  display: none;
+.map-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  border-radius: 38%;
+  overflow: hidden;
 }
 
-*::-webkit-scrollbar-track {
-  background-color: transparent;
+.naver {
+  width: 100%;
+  background-image: url('/naver.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #babac0;
-  border-radius: 1rem;
+.kakao {
+  width: 100%;
+  background-image: url('/kakao.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-*::-webkit-scrollbar-button {
-  display: none;
+.tmap {
+  width: 100%;
+  background-image: url('/tmap.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
