@@ -53,12 +53,12 @@ export const Wedding = () => {
       <div>
         <div className="flex justify-between w-60 items-center mx-auto">
           <div className="map-icon opacity-[0.85] cursor-pointer">
-            <a href="https://naver.me/Fgivzc56">
+            <a href="https://naver.me/xwmiFiaC">
               <div className="naver w-full h-full"></div>
             </a>
           </div>
           <div className="map-icon opacity-[0.85] cursor-pointer">
-            <a href="https://m.map.kakao.com/actions/detailMapView?id=27339651&refService=place">
+            <a href="https://place.map.kakao.com/m/27339651">
               <div className="kakao w-full h-full"></div>
             </a>
           </div>
