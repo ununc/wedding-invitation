@@ -1,54 +1,31 @@
 import { useEffect, useRef } from 'react';
 import { Section } from '../components/Section';
+import { AppearObserver } from '../components/AppearObserver';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import Video from '/intro/intros.mp4';
 
 export const Intro = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const title = useRef<HTMLDivElement>(null);
-
   const isIntersecting = () => {
     videoRef?.current?.play();
   };
-
   const isNotIntersecting = () => {
     const video = videoRef?.current;
-    if (video) {
-      video.pause();
-      video.currentTime = 0;
-    }
+    if (!video) return;
+    video.pause();
+    video.currentTime = 0;
   };
-
   const [observe, disconnect] = useIntersectionObserver(
     () => isIntersecting(),
     () => isNotIntersecting(),
     0.2,
   );
-
-  const isIntersecting1 = (element: React.RefObject<HTMLDivElement>) => {
-    element?.current?.classList.add('appear-active');
-  };
-
-  const isNotIntersecting1 = (element: React.RefObject<HTMLDivElement>) => {
-    element?.current?.classList.remove('appear-active');
-  };
-
-  const [observe1, disconnect1] = useIntersectionObserver(
-    () => isIntersecting1(title),
-    () => isNotIntersecting1(title),
-    0.2,
-  );
-
   useEffect(() => {
     if (videoRef?.current) {
       observe(videoRef.current);
     }
-    if (title?.current) {
-      observe1(title.current);
-    }
     return () => {
       disconnect();
-      disconnect1();
     };
   }, []);
   return (
@@ -65,12 +42,12 @@ export const Intro = () => {
           <source src={Video} type="video/mp4" />
         </video>
       </div>
-      <div ref={title} className="opacity-0">
-        <div className="w-full text-neutral-700 opacity-80 font-medium text-xl sm:text-2xl p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center">
+      <AppearObserver>
+        <div className="w-full text-neutral-600 opacity-80 font-medium text-lg sm:text-2xl p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center">
           <div>2024. 10. 09 (수) "한글날" 낮12:00</div>
           <div className="mt-3 sm:mt-4">MJ컨벤션 5층 그랜드볼룸홀</div>
         </div>
-      </div>
+      </AppearObserver>
     </Section>
   );
 };

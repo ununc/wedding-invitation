@@ -123,7 +123,7 @@ export const AnswerModal = ({
       <div className="bg-appear w-[100vw] h-full bg-slate-700"></div>
       <div className="absolute h-fit w-[90%] flex flex-col items-end">
         <div className="page-card rounded-lg w-full mb-2 p-4">
-          <div className="text-center flex flex-col gap-0.5 text-neutral-700 opacity-75 text-[0.9375rem]">
+          <div className="text-center flex flex-col gap-0.5 text-neutral-700 opacity-75 text-15">
             {ModalContent(modalIndex)}
           </div>
         </div>

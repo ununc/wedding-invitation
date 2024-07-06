@@ -18,6 +18,9 @@ module.exports = {
           950: '#451a03',
         },
       },
+      fontSize: {
+        15: ['0.9375rem', '1.4rem'],
+      },
     },
   },
   plugins: [],

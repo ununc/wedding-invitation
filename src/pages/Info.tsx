@@ -63,10 +63,7 @@ export const Info = () => {
   }, []);
   return (
     <Section>
-      <div className="mt-8 border border-green-700 h-48 w-[85%]">
-        축하 메세지 comments 다는 곳
-      </div>
-      <div className="w-full mt-8">
+      <div className="w-full mt-16">
         <div ref={flower} className="w-full opacity-0">
           <div className="w-full opacity-[0.55]">
             <Flower />
@@ -82,7 +79,7 @@ export const Info = () => {
           <div ref={man} className="w-full opacity-0">
             <div className="relative w-full">
               <div className="w-full bg-amber-700 opacity-[0.08] text-center h-9 rounded-lg"></div>
-              <div className="absolute absolute-center text-sm text-amber-950 opacity-60 text-center">
+              <div className="absolute absolute-center w-32 text-sm text-amber-950 opacity-60 text-center">
                 신랑 측 계좌번호
               </div>
             </div>
@@ -98,7 +95,7 @@ export const Info = () => {
           <div ref={woman} className="w-full opacity-0">
             <div className="relative w-full mt-8">
               <div className="w-full bg-amber-700 opacity-[0.08] text-center h-9 rounded-lg"></div>
-              <div className="absolute absolute-center text-sm text-amber-950 opacity-60 text-center">
+              <div className="absolute absolute-center w-32 text-sm text-amber-950 opacity-60 text-center">
                 신부 측 계좌번호
               </div>
             </div>
