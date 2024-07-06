@@ -1,6 +1,7 @@
 import { Section } from '../components/Section';
 import { AppearObserver } from '../components/AppearObserver';
 import { ClipBoard } from '../components/ClipBoard';
+import CopyIcon from '../components/CopyIcon';
 
 const location = '경기도 부천시 소사구 경인로 386';
 export const Location = ({ setAppear }: { setAppear: () => void }) => {
@@ -22,7 +23,12 @@ export const Location = ({ setAppear }: { setAppear: () => void }) => {
       <AppearObserver>
         <div className="mt-5 text-center text-15 text-neutral-700 opacity-75">
           <ClipBoard text={location} setAppear={setAppear}>
-            <div>{location}</div>
+            <div className="flex items-center">
+              {location}
+              <div className="opacity-60 ml-2">
+                <CopyIcon color="#404040" />
+              </div>
+            </div>
           </ClipBoard>
           <div className="mt-2">MJ컨벤션 5층 그랜드볼룸홀</div>
         </div>

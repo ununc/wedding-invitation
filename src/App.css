@@ -93,11 +93,11 @@ textarea {
     height: 0rem;
   }
   30% {
-    opacity: 1;
+    opacity: 0.85;
     height: 2.75rem;
   }
   80% {
-    opacity: 1;
+    opacity: 0.85;
     height: 2.75rem;
   }
   95% {
