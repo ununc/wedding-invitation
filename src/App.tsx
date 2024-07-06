@@ -56,6 +56,10 @@ function App() {
   const handleCloseModal = (event?: React.MouseEvent<HTMLDivElement>) => {
     if (!(event?.target as HTMLDivElement)?.classList?.contains('backdrop'))
       return;
+    closeCommentModal();
+  };
+
+  const closeCommentModal = () => {
     setCreateModal(false);
     setName('');
     setPass('');
@@ -73,6 +77,10 @@ function App() {
   const handleCloseDeleteModal = (event?: React.MouseEvent<HTMLDivElement>) => {
     if (!(event?.target as HTMLDivElement)?.classList?.contains('backdrop'))
       return;
+    closeDeleteModal();
+  };
+
+  const closeDeleteModal = () => {
     setDeleteTarget(null);
     setPass('');
     document.body.style.overflow = 'auto';
@@ -80,8 +88,15 @@ function App() {
 
   const handleDeleteComment = () => {
     if (btoa(pass) === deleteTarget?.password) {
-      database.ref(`comments/${deleteTarget?.id}`).remove();
-      handleCloseDeleteModal();
+      database
+        .ref(`comments/${deleteTarget?.id}`)
+        .remove()
+        .then(() => {
+          closeDeleteModal();
+          setCommentList((prev) =>
+            prev.filter((item) => item.id !== deleteTarget.id),
+          );
+        });
       return;
     }
     alert('비밀번호가 맞지 않습니다.');
@@ -95,8 +110,7 @@ function App() {
       for (const property in commentObject) {
         resultArray.push(commentObject[property]);
       }
-      console.log(resultArray);
-      setCommentList(resultArray);
+      setCommentList(resultArray.toReversed());
     });
   };
 
@@ -116,16 +130,18 @@ function App() {
     const createdAt = new Date().getTime();
     const password = btoa(pass);
     const id = createdAt + name + password;
+    const item = {
+      id,
+      name,
+      password,
+      message,
+    };
     database
       .ref(`comments/${id}`)
-      .set({
-        id,
-        name,
-        password,
-        message,
-      })
+      .set(item)
       .then(() => {
-        handleCloseModal();
+        setCommentList((prev) => [item, ...prev]);
+        closeCommentModal();
       });
   };
 
@@ -153,22 +169,24 @@ function App() {
           </h2>
         </AppearObserver>
         <AppearObserver>
-          <div className="w-96 max-h-96 overflow-y-scroll px-7 mt-8 flex flex-col gap-4">
-            {commentList.map(({ name, message, id, password }) => {
-              return (
-                <div
-                  key={id}
-                  className="bg-white shadow-md rounded-lg p-4 text-amber-950 opacity-40 border border-amber-950 border-dashed">
-                  <div className="flex gap-5 justify-between items-center">
-                    <div className="w-40 truncate mt-0.5">From. {name}</div>
-                    <button onClick={() => handleDelete(id)}>x</button>
+          <div className="w-full h-fit flex justify-center items-center">
+            <div className="w-96 max-h-96 overflow-y-scroll px-7 mt-8 flex flex-col gap-4">
+              {commentList.map(({ name, message, id, password }) => {
+                return (
+                  <div
+                    key={id}
+                    className="bg-white shadow-md rounded-lg p-4 text-amber-950 opacity-40 border border-amber-950 border-dashed">
+                    <div className="flex gap-5 justify-between items-center">
+                      <div className="w-40 truncate mt-0.5">From. {name}</div>
+                      <button onClick={() => handleDelete(id)}>x</button>
+                    </div>
+                    <div className="break-words text-sm mt-2 p-0.5">
+                      {message}
+                    </div>
                   </div>
-                  <div className="break-words text-sm mt-2 p-0.5">
-                    {message}
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </AppearObserver>
         <AppearObserver>

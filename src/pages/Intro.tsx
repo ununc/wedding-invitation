@@ -30,7 +30,7 @@ export const Intro = () => {
   }, []);
   return (
     <Section>
-      <div className="mt-3 mx-3 sm:mt-4 sm:mx-4 overflow-hidden rounded-xl">
+      <div className="mt-3 mx-3 overflow-hidden rounded-xl">
         <video
           preload="auto"
           className="intro-video shrink-0"
@@ -43,9 +43,9 @@ export const Intro = () => {
         </video>
       </div>
       <AppearObserver>
-        <div className="w-full text-neutral-600 opacity-80 font-medium text-lg sm:text-2xl p-1 my-8 sm:my-12 grow flex flex-col justify-center items-center">
+        <div className="w-full text-neutral-600 opacity-80 font-medium text-base my-4 p-1 grow flex flex-col justify-center items-center">
           <div>2024. 10. 09 (수) "한글날" 낮12:00</div>
-          <div className="mt-3 sm:mt-4">MJ컨벤션 5층 그랜드볼룸홀</div>
+          <div className="mt-2">MJ컨벤션 5층 그랜드볼룸홀</div>
         </div>
       </AppearObserver>
     </Section>

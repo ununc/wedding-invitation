@@ -17,7 +17,7 @@ export const QnAItem = ({
     <AppearObserver>
       <div className="flex flex-col mt-10 items-center justify-center px-2.5">
         <div className="text-neutral-700 opacity-[0.68] text-15">{title}</div>
-        <div className="flex w-11/12 justify-between gap-2 mt-4 h-44">
+        <div className="flex w-full justify-center gap-4 mt-4 h-44">
           <div
             className="w-40 h-full rounded-xl overflow-hidden cursor-pointer"
             onClick={leftFunction}>
@@ -26,7 +26,7 @@ export const QnAItem = ({
           <div
             className="w-40 h-full rounded-xl overflow-hidden cursor-pointer"
             onClick={rightFunction}>
-            <img className="w-full h-full object-cover " src={right} alt="" />
+            <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
         </div>
         <div className=" text-xs text-neutral-700 opacity-40 mt-4">

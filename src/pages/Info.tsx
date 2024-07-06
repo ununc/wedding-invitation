@@ -100,9 +100,9 @@ export const Info = () => {
               </div>
             </div>
             <div className="text-neutral-700 opacity-80 text-xs flex flex-col justify-center items-center gap-1 mt-2.5">
-              <div className="">김정실 신한</div>
+              <div className="">김정실 신한 110-4690-78428</div>
               <div className="">
-                이새봄 신한 110-386-204-301 <button>복사 숫자만</button>
+                이새봄 우리 100-2352-692357 <button>복사 숫자만</button>
               </div>
             </div>
           </div>

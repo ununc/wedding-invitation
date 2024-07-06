@@ -19,16 +19,14 @@ export const Invitation = () => {
         </div>
       </AppearObserver>
       <AppearObserver>
-        <div className="text-15 sm:text-lg text-neutral-700 opacity-75 text-center mt-3">
+        <div className="text-15 text-neutral-700 opacity-75 text-center mt-3">
           <div className="">우리가 사랑함은</div>
           <div>그가 먼저 우리를 사랑하셨음이라</div>
-          <div className="mt-1.5 sm:mt-2 text-xs sm:text-base">
-            요한일서 4:19
-          </div>
+          <div className="mt-1.5 text-xs">요한일서 4:19</div>
         </div>
       </AppearObserver>
 
-      <div className="mt-5 sm:mt-7 text-sm sm:text-bases text-neutral-700 opacity-75 text-center">
+      <div className="mt-5 text-sm text-neutral-700 opacity-75 text-center">
         <AppearObserver>
           <div className="mt-2">
             가장 좋은 때에, 가장 좋은 사람을 만났습니다.
@@ -54,23 +52,23 @@ export const Invitation = () => {
       </div>
 
       <AppearObserver>
-        <div className="text-lg sm:text-xl py-16 flex justify-center items-center text-neutral-700 opacity-75">
-          <div className="text-end mr-4 sm:mr-6">
-            <div className="h-7  mb-0.5 sm:mb-[1.125rem] ">
+        <div className="text-lg py-12 flex justify-center items-center text-neutral-700 opacity-75">
+          <div className="text-end mr-4">
+            <div className="h-7  mb-0.5">
               유호영 • 노정연
-              <span className="pl-1 text-[0.9rem] sm:text-base text-amber-950 opacity-50">
+              <span className="pl-1 text-[0.9rem] text-amber-950 opacity-50">
                 의 장남
               </span>
             </div>
             <div className="h-1.5"></div>
-            <div className="h-7 mt-3 sm:mt-2.5">
+            <div className="h-7 mt-3">
               故이종성 • 김정실
-              <span className="pl-1 text-[0.9rem] sm:text-base text-amber-950 opacity-50">
+              <span className="pl-1 text-[0.9rem] text-amber-950 opacity-50">
                 의 장녀
               </span>
             </div>
           </div>
-          <div className="flex flex-col justify-end items-center mr-[1.125rem] sm:mr-5">
+          <div className="flex flex-col justify-end items-center mr-[1.125rem]">
             <div>형철</div>
             <div className="h-5"></div>
             <div>새봄</div>

@@ -117,10 +117,19 @@ export const AnswerModal = ({
   if (!modalIndex) {
     return <></>;
   }
+
+  const handleCloseModal = (event?: React.MouseEvent<HTMLDivElement>) => {
+    if (!(event?.target as HTMLDivElement)?.classList?.contains('backdrop'))
+      return;
+    close();
+  };
+
   document.body.style.overflow = 'hidden';
   return (
-    <div className="fixed flex justify-center items-center top-0 bottom-0 left-0 right-0 h-screen w-full overflow-hidden">
-      <div className="bg-appear w-[100vw] h-full bg-slate-700"></div>
+    <div
+      onClick={handleCloseModal}
+      className="fixed flex justify-center items-center top-0 bottom-0 left-0 right-0">
+      <div className="bg-appear bg-slate-600 backdrop"></div>
       <div className="absolute h-fit w-[90%] flex flex-col items-end">
         <div className="page-card rounded-lg w-full mb-2 p-4">
           <div className="text-center flex flex-col gap-0.5 text-neutral-700 opacity-75 text-15">
