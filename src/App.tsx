@@ -110,7 +110,7 @@ function App() {
       for (const property in commentObject) {
         resultArray.push(commentObject[property]);
       }
-      setCommentList(resultArray.toReversed());
+      setCommentList(resultArray.reverse());
     });
   };
 
