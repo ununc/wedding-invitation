@@ -2,8 +2,11 @@ import { useEffect, useRef } from 'react';
 import { Flower } from '../components/Flower';
 import { Section } from '../components/Section';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { AppearObserver } from '../components/AppearObserver';
+import { ClipBoard } from '../components/ClipBoard';
+import CopyIcon from '../components/CopyIcon';
 
-export const Info = () => {
+export const Info = ({ setAppear }: { setAppear: () => void }) => {
   const flower = useRef<HTMLDivElement>(null);
   const title = useRef<HTMLDivElement>(null);
   const man = useRef<HTMLDivElement>(null);
@@ -64,19 +67,19 @@ export const Info = () => {
   return (
     <Section>
       <div className="w-full mt-16">
-        <div ref={flower} className="w-full opacity-0">
+        <AppearObserver>
           <div className="w-full opacity-[0.55]">
             <Flower />
           </div>
-        </div>
-        <div ref={title} className="w-full opacity-0">
+        </AppearObserver>
+        <AppearObserver>
           <h2 className="text-sm h-12 mt-2 text-amber-950 opacity-[0.45] text-center">
             마음 전하실 곳
           </h2>
-        </div>
+        </AppearObserver>
 
         <div className="flex flex-col justify-center items-center mt-1 w-8/12 mx-auto">
-          <div ref={man} className="w-full opacity-0">
+          <AppearObserver>
             <div className="relative w-full">
               <div className="w-full bg-amber-700 opacity-[0.08] text-center h-9 rounded-lg"></div>
               <div className="absolute absolute-center w-32 text-sm text-amber-950 opacity-60 text-center">
@@ -90,9 +93,9 @@ export const Info = () => {
                 유형철 신한 110-386-204-301 <button>복사 숫자만</button>
               </div>
             </div>
-          </div>
+          </AppearObserver>
 
-          <div ref={woman} className="w-full opacity-0">
+          <AppearObserver>
             <div className="relative w-full mt-8">
               <div className="w-full bg-amber-700 opacity-[0.08] text-center h-9 rounded-lg"></div>
               <div className="absolute absolute-center w-32 text-sm text-amber-950 opacity-60 text-center">
@@ -101,11 +104,17 @@ export const Info = () => {
             </div>
             <div className="text-neutral-700 opacity-80 text-xs flex flex-col justify-center items-center gap-1 mt-2.5">
               <div className="">김정실 신한 110-4690-78428</div>
-              <div className="">
-                이새봄 우리 100-2352-692357 <button>복사 숫자만</button>
-              </div>
+
+              <ClipBoard text="100-2352-692357" setAppear={setAppear}>
+                <div className="flex items-center">
+                  이새봄 우리 100-2352-692357
+                  <div className="opacity-60 ml-1.5">
+                    <CopyIcon />
+                  </div>
+                </div>
+              </ClipBoard>
             </div>
-          </div>
+          </AppearObserver>
         </div>
       </div>
       <div className="mt-12 border-t-2 border-dashed border-amber-900 h-32 w-full text-sm flex flex-col items-center justify-center text-amber-950 opacity-40">

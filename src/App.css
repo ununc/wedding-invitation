@@ -83,6 +83,7 @@ textarea {
 }
 
 .appear-copy {
+  overflow: hidden;
   animation: fade-copy 2.5s ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -92,12 +93,12 @@ textarea {
     opacity: 0;
     height: 0rem;
   }
-  30% {
-    opacity: 0.85;
+  10% {
+    opacity: 0.8;
     height: 2.75rem;
   }
   80% {
-    opacity: 0.85;
+    opacity: 0.8;
     height: 2.75rem;
   }
   95% {

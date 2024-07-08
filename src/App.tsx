@@ -202,15 +202,14 @@ function App() {
           </div>
         </AppearObserver>
       </Section>
-      <Info />
+      <Info setAppear={appearCopy} />
       {createModal && (
         <div
           className="fixed top-0 left-0 right-0 bottom-0 backdrop"
           onClick={handleCloseModal}>
-          <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg border border-amber-950 border-dashed bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
-            <div className="text-base mb-4">방 명 록</div>
+          <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
             <textarea
-              className="w-full border-t-2 border-r-2 border-l-2 border border-b-amber-900 h-52 rounded-lg p-4 opacity-80"
+              className="w-full mt-1.5 h-52 rounded-lg p-4 border border-neutral-300 focus:border-amber-900/40 opacity-80 resize-none"
               placeholder="내용"
               onInput={handleMessage}
               value={message}
@@ -218,21 +217,21 @@ function App() {
             <div className="flex mt-5 gap-3">
               <input
                 type="text"
-                className="flex-shrink w-1/2 rounded-lg border border-amber-900 p-2 opacity-80"
+                className="flex-shrink w-1/2 rounded-lg border border-neutral-300 p-2 opacity-80 focus:border-amber-900/40"
                 placeholder="이름"
                 onInput={handleName}
                 value={name}
               />
               <input
                 type="password"
-                className="flex-shrink w-1/2 rounded-lg border border-amber-900 p-2 opacity-80"
+                className="flex-shrink w-1/2 rounded-lg border border-neutral-300 p-2 opacity-80 focus:border-amber-900/40"
                 placeholder="비밀번호"
                 onInput={handlePass}
                 value={pass}
               />
             </div>
             <button
-              className="mt-8 mb-2 cursor-pointer"
+              className="mt-8 mb-2 text-neutral-700 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
               onClick={handleCreateComment}>
               방명록 남기기
             </button>
@@ -243,7 +242,7 @@ function App() {
         <div
           className="fixed top-0 left-0 right-0 bottom-0 backdrop"
           onClick={handleCloseDeleteModal}>
-          <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg border border-amber-950 border-dashed bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
+          <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
             <div className="flex mt-5 gap-3">
               <input
                 type="password"
@@ -254,7 +253,7 @@ function App() {
               />
             </div>
             <button
-              className="mt-8 mb-2 cursor-pointer"
+              className="mt-6 text-neutral-700 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
               onClick={handleDeleteComment}>
               방명록 지우기
             </button>

@@ -1,10 +1,10 @@
-const CopyIcon = ({ color = '#404040' }: { color: string }) => {
+const CopyIcon = ({ color = '#404040' }: { color?: string }) => {
   return (
     <svg
       fill="none"
-      height="19"
-      viewBox="0 0 22 27"
-      width="16"
+      width="12"
+      height="14"
+      viewBox="0 0 26 25"
       xmlns="http://www.w3.org/2000/svg">
       <path
         d="M17.5 21.1664V22.9815C17.5 24.1916 16.5 25.2 15.3 25.2H3.9C2.7 25.2 1.7 24.1916 1.7 22.9815V7.14959C1.7 5.93951 2.7 4.93109 3.9 4.93109"
