@@ -161,7 +161,7 @@ function App() {
       <Location setAppear={appearCopy} />
       <Section>
         <AppearObserver>
-          <h2 className="text-[0.625rem] mt-10 text-amber-950 tracking-tighter opacity-40 text-center">
+          <h2 className="text-[0.625rem] mt-11 text-amber-950 tracking-tighter opacity-40 text-center">
             G U E S T &nbsp; B O O K
           </h2>
           <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
@@ -169,13 +169,13 @@ function App() {
           </h2>
         </AppearObserver>
         <AppearObserver>
-          <div className="w-full h-fit flex justify-center items-center">
-            <div className="w-96 max-h-96 overflow-y-scroll px-7 mt-8 flex flex-col gap-4">
-              {commentList.map(({ name, message, id, password }) => {
+          <div className="w-full h-fit flex justify-center px-6 items-center overflow-hidden">
+            <div className="w-11/12 h-96 overflow-y-scroll mt-8 px-3 flex flex-col gap-4">
+              {commentList.map(({ name, message, id }) => {
                 return (
                   <div
                     key={id}
-                    className="bg-white shadow-md rounded-lg p-4 text-amber-950 opacity-40 border border-amber-950 border-dashed">
+                    className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
                     <div className="flex gap-5 justify-between items-center">
                       <div className="w-40 truncate mt-0.5">From. {name}</div>
                       <button onClick={() => handleDelete(id)}>x</button>
@@ -194,8 +194,8 @@ function App() {
             <button
               onClick={handleCreateModal}
               className="relative w-64 cursor-pointer">
-              <div className="w-full bg-amber-700 opacity-[0.08] text-center h-9 rounded-lg"></div>
-              <div className="absolute absolute-center text-sm text-amber-950 opacity-60 text-center">
+              <div className="w-full text-center h-9 rounded-lg"></div>
+              <div className="absolute absolute-center text-sm text-amber-950/80 py-1.5 px-2 cursor-pointer rounded-lg border-amber-950/80 border border-dashed opacity-60 text-center">
                 방명록 작성하기
               </div>
             </button>
@@ -231,7 +231,7 @@ function App() {
               />
             </div>
             <button
-              className="mt-8 mb-2 text-neutral-700 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
+              className="mt-8 mb-2 text-amber-950/80 opacity-70  border rounded-lg  border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
               onClick={handleCreateComment}>
               방명록 남기기
             </button>
@@ -253,7 +253,7 @@ function App() {
               />
             </div>
             <button
-              className="mt-6 text-neutral-700 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
+              className="mt-6 text-amber-950/80 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
               onClick={handleDeleteComment}>
               방명록 지우기
             </button>
@@ -262,7 +262,7 @@ function App() {
       )}
       <div
         className={
-          'copy bg-slate-800 text-slate-100 py-2.5 px-5 rounded-lg ' +
+          'copy bg-slate-800 text-sm text-slate-100 pt-2 px-3 rounded-lg ' +
           (appear ? 'appear-copy' : 'hidden')
         }>
         복사되었습니다

@@ -87,19 +87,19 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
               </div>
             </div>
             <div className="text-neutral-700 opacity-80 text-xs flex flex-col justify-center items-center gap-1 mt-2.5">
-              <ClipBoard text="110-4690-78428" setAppear={setAppear}>
+              <ClipBoard text="287701-04-294670" setAppear={setAppear}>
                 <div className="flex items-center mt-1">
-                  <div className="w-16">유호영 신한</div>
-                  <div className="w-[6.5rem] text-center">110-4690-78428</div>
+                  <div className="w-16">유호영 국민</div>
+                  <div className="w-28 text-center">287701-04-294670</div>
                   <div className="opacity-60 ml-1.5">
                     <CopyIcon />
                   </div>
                 </div>
               </ClipBoard>
-              <ClipBoard text="100-2352-692357" setAppear={setAppear}>
+              <ClipBoard text="351-0731-3257-43" setAppear={setAppear}>
                 <div className="flex items-center mt-1.5">
-                  <div className="w-16">노정연 신한</div>
-                  <div className="w-[6.5rem] text-center">100-2352-692357</div>
+                  <div className="w-16">노정연 농협</div>
+                  <div className="w-28 text-center">351-0731-3257-43</div>
                   <div className="opacity-60 ml-1.5">
                     <CopyIcon />
                   </div>
@@ -109,7 +109,7 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
               <ClipBoard text="110-386-204-301" setAppear={setAppear}>
                 <div className="flex items-center mt-1.5">
                   <div className="w-16">유형철 신한</div>
-                  <div className="w-[6.5rem] text-center">110-386-204301</div>
+                  <div className="w-28 text-center">110-386-204301</div>
                   <div className="opacity-60 ml-1.5">
                     <CopyIcon />
                   </div>
@@ -129,17 +129,17 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
               <ClipBoard text="110-4690-78428" setAppear={setAppear}>
                 <div className="flex items-center mt-1">
                   <div className="w-16">김정실 신한</div>
-                  <div className="w-[6.5rem] text-center">110-4690-78428</div>
+                  <div className="w-28 text-center">110-4690-78428</div>
                   <div className="opacity-60 ml-1.5">
                     <CopyIcon />
                   </div>
                 </div>
               </ClipBoard>
 
-              <ClipBoard text="100-2352-692357" setAppear={setAppear}>
+              <ClipBoard text="1002-352-692357" setAppear={setAppear}>
                 <div className="flex items-center mt-1.5">
                   <div className="w-16">이새봄 우리</div>
-                  <div className="w-[6.5rem] text-center">100-2352-692357</div>
+                  <div className="w-28 text-center">1002-352-692357</div>
                   <div className="opacity-60 ml-1.5">
                     <CopyIcon />
                   </div>
