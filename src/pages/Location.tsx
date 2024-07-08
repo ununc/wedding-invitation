@@ -8,7 +8,7 @@ export const Location = ({ setAppear }: { setAppear: () => void }) => {
   return (
     <Section>
       <AppearObserver>
-        <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center mt-4">
+        <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center mt-16">
           L O C A T I O N
         </h2>
         <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">

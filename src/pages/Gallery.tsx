@@ -14,62 +14,58 @@ export const Gallery = () => {
       </AppearObserver>
       <AppearObserver>
         <div className="flex gap-3.5 w-full justify-center items-center mt-10">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
         <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
       </AppearObserver>
       <AppearObserver>
         <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
         <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
       </AppearObserver>
       <AppearObserver>
         <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
         <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
       </AppearObserver>
       <AppearObserver>
         <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
         <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-        </div>
-      </AppearObserver>
-      <AppearObserver>
-        <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-        </div>
-        <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
-          <div className="w-24 h-24 border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
         </div>
       </AppearObserver>
     </Section>
