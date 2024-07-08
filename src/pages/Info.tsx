@@ -87,11 +87,34 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
               </div>
             </div>
             <div className="text-neutral-700 opacity-80 text-xs flex flex-col justify-center items-center gap-1 mt-2.5">
-              <div className="">유호영 신한</div>
-              <div className="">노정연 신한</div>
-              <div className="">
-                유형철 신한 110-386-204-301 <button>복사 숫자만</button>
-              </div>
+              <ClipBoard text="110-4690-78428" setAppear={setAppear}>
+                <div className="flex items-center mt-1">
+                  <div className="w-16">유호영 신한</div>
+                  <div className="w-[6.5rem] text-center">110-4690-78428</div>
+                  <div className="opacity-60 ml-1.5">
+                    <CopyIcon />
+                  </div>
+                </div>
+              </ClipBoard>
+              <ClipBoard text="100-2352-692357" setAppear={setAppear}>
+                <div className="flex items-center mt-1.5">
+                  <div className="w-16">노정연 신한</div>
+                  <div className="w-[6.5rem] text-center">100-2352-692357</div>
+                  <div className="opacity-60 ml-1.5">
+                    <CopyIcon />
+                  </div>
+                </div>
+              </ClipBoard>
+
+              <ClipBoard text="110-386-204-301" setAppear={setAppear}>
+                <div className="flex items-center mt-1.5">
+                  <div className="w-16">유형철 신한</div>
+                  <div className="w-[6.5rem] text-center">110-386-204301</div>
+                  <div className="opacity-60 ml-1.5">
+                    <CopyIcon />
+                  </div>
+                </div>
+              </ClipBoard>
             </div>
           </AppearObserver>
 
@@ -103,11 +126,20 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
               </div>
             </div>
             <div className="text-neutral-700 opacity-80 text-xs flex flex-col justify-center items-center gap-1 mt-2.5">
-              <div className="">김정실 신한 110-4690-78428</div>
+              <ClipBoard text="110-4690-78428" setAppear={setAppear}>
+                <div className="flex items-center mt-1">
+                  <div className="w-16">김정실 신한</div>
+                  <div className="w-[6.5rem] text-center">110-4690-78428</div>
+                  <div className="opacity-60 ml-1.5">
+                    <CopyIcon />
+                  </div>
+                </div>
+              </ClipBoard>
 
               <ClipBoard text="100-2352-692357" setAppear={setAppear}>
-                <div className="flex items-center">
-                  이새봄 우리 100-2352-692357
+                <div className="flex items-center mt-1.5">
+                  <div className="w-16">이새봄 우리</div>
+                  <div className="w-[6.5rem] text-center">100-2352-692357</div>
                   <div className="opacity-60 ml-1.5">
                     <CopyIcon />
                   </div>
