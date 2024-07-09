@@ -13,6 +13,39 @@ const left3 =
 const right3 =
   'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KakaoTalk_20240627_224543615.jpg?alt=media&token=70813d66-e9fc-43bc-9e2b-b69fd1c5df0e';
 
+const urlList1 = [
+  left,
+  right,
+  left,
+  right,
+  left,
+  right,
+  left,
+  right,
+  left,
+  right,
+  left,
+  right,
+];
+const urlList2 = [
+  left2,
+  right2,
+  left2,
+  right2,
+  left2,
+  right2,
+  left2,
+  right2,
+  left3,
+  right3,
+  left3,
+  right3,
+  left3,
+  right3,
+  left3,
+  right3,
+];
+
 export const Gallery = () => {
   return (
     <Section>
@@ -26,94 +59,28 @@ export const Gallery = () => {
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-10">
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right} alt="" />
-          </div>
+          {urlList1.map((url) => {
+            return (
+              <div
+                key={url}
+                className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
+                <img className="w-full h-full object-cover" src={url} alt="" />
+              </div>
+            );
+          })}
         </div>
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-2">
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right2} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={left3} alt="" />
-          </div>
-          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
-            <img className="w-full h-full object-cover" src={right3} alt="" />
-          </div>
+          {urlList2.map((url) => {
+            return (
+              <div
+                key={url}
+                className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
+                <img className="w-full h-full object-cover" src={url} alt="" />
+              </div>
+            );
+          })}
         </div>
       </AppearObserver>
     </Section>

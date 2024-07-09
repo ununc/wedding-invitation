@@ -11,6 +11,7 @@ import { Section } from './components/Section';
 import { database } from './firebase/firebase';
 import { AppearObserver } from './components/AppearObserver';
 import { Flower } from './components/Flower';
+import { Calendar } from './pages/Calendar';
 
 function App() {
   const [init, setInit] = useState(true);
@@ -159,7 +160,6 @@ function App() {
       <Interview setModalIndex={setModalIndex} />
       <Gallery />
       <AnswerModal modalIndex={modalIndex} close={closeModal} />
-
       <Section>
         <AppearObserver>
           <div className="w-full mt-16 mb-1.5 opacity-[0.55]">
@@ -205,6 +205,7 @@ function App() {
           </div>
         </AppearObserver>
       </Section>
+      <Calendar />
       <Location setAppear={appearCopy} />
       <Info setAppear={appearCopy} />
       {createModal && (

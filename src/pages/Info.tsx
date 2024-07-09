@@ -92,7 +92,14 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
       </div>
       <div className="mt-12 border-t-2 border-dashed border-amber-900 h-32 w-full text-sm flex flex-col items-center justify-center text-amber-950 opacity-40">
         <div>카카오톡 공유하기</div>
-        <div className="mt-2">링크주소 복사하기</div>
+        <ClipBoard text="1002-352-692357" setAppear={setAppear}>
+          <div className="flex items-center mt-2">
+            <div className="mt-2">링크주소 복사하기</div>
+            <div className="opacity-60 ml-1.5">
+              <CopyIcon />
+            </div>
+          </div>
+        </ClipBoard>
         <div className="mt-2 text-[0.625rem]">
           Copyright 2024. <span className="font-bold">Yanagi</span> all rights
           reserved.
