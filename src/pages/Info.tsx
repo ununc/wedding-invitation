@@ -1,72 +1,13 @@
-import { useEffect, useRef } from 'react';
 import { Flower } from '../components/Flower';
 import { Section } from '../components/Section';
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import { AppearObserver } from '../components/AppearObserver';
 import { ClipBoard } from '../components/ClipBoard';
 import CopyIcon from '../components/CopyIcon';
 
 export const Info = ({ setAppear }: { setAppear: () => void }) => {
-  const flower = useRef<HTMLDivElement>(null);
-  const title = useRef<HTMLDivElement>(null);
-  const man = useRef<HTMLDivElement>(null);
-  const woman = useRef<HTMLDivElement>(null);
-
-  const isIntersecting = (element: React.RefObject<HTMLDivElement>) => {
-    element?.current?.classList.add('appear-active');
-  };
-
-  const isNotIntersecting = (element: React.RefObject<HTMLDivElement>) => {
-    element?.current?.classList.remove('appear-active');
-  };
-
-  const [observeFlower, disconnectFlower] = useIntersectionObserver(
-    () => isIntersecting(flower),
-    () => isNotIntersecting(flower),
-    0.2,
-  );
-
-  const [observeTitle, disconnectTitle] = useIntersectionObserver(
-    () => isIntersecting(title),
-    () => isNotIntersecting(title),
-    0.2,
-  );
-
-  const [observeMan, disconnectMan] = useIntersectionObserver(
-    () => isIntersecting(man),
-    () => isNotIntersecting(man),
-    0.2,
-  );
-
-  const [observeWoman, disconnectWoman] = useIntersectionObserver(
-    () => isIntersecting(woman),
-    () => isNotIntersecting(woman),
-    0.2,
-  );
-
-  useEffect(() => {
-    if (flower?.current) {
-      observeFlower(flower.current);
-    }
-    if (title?.current) {
-      observeTitle(title.current);
-    }
-    if (man?.current) {
-      observeMan(man.current);
-    }
-    if (woman?.current) {
-      observeWoman(woman.current);
-    }
-    return () => {
-      disconnectFlower();
-      disconnectTitle();
-      disconnectMan();
-      disconnectWoman();
-    };
-  }, []);
   return (
     <Section>
-      <div className="w-full mt-16">
+      <div className="w-full mt-10">
         <AppearObserver>
           <div className="w-full opacity-[0.55]">
             <Flower />

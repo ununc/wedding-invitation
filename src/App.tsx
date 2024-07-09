@@ -10,6 +10,7 @@ import { AnswerModal } from './components/AnswerModal';
 import { Section } from './components/Section';
 import { database } from './firebase/firebase';
 import { AppearObserver } from './components/AppearObserver';
+import { Flower } from './components/Flower';
 
 function App() {
   const [init, setInit] = useState(true);
@@ -158,14 +159,16 @@ function App() {
       <Interview setModalIndex={setModalIndex} />
       <Gallery />
       <AnswerModal modalIndex={modalIndex} close={closeModal} />
-      <Location setAppear={appearCopy} />
+
       <Section>
         <AppearObserver>
-          <h2 className="text-[0.625rem] mt-11 text-amber-950 tracking-tighter opacity-40 text-center">
+          <div className="w-full mt-11 mb-1.5 opacity-[0.55]">
+            <Flower />
+          </div>
+        </AppearObserver>
+        <AppearObserver>
+          <h2 className="text-sm  text-amber-950 tracking-tighter opacity-40 text-center">
             G U E S T &nbsp; B O O K
-          </h2>
-          <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
-            방명록
           </h2>
         </AppearObserver>
         <AppearObserver>
@@ -190,18 +193,19 @@ function App() {
           </div>
         </AppearObserver>
         <AppearObserver>
-          <div className="w-full flex justify-center items-center mt-8">
+          <div className="w-full flex justify-center items-center mt-9">
             <button
               onClick={handleCreateModal}
-              className="relative w-64 cursor-pointer">
+              className="relative w-72 cursor-pointer">
               <div className="w-full text-center h-9 rounded-lg"></div>
               <div className="absolute absolute-center text-sm text-amber-950/80 py-1.5 px-2 cursor-pointer rounded-lg border-amber-950/80 border border-dashed opacity-60 text-center">
-                방명록 작성하기
+                축하 인사 전하기
               </div>
             </button>
           </div>
         </AppearObserver>
       </Section>
+      <Location setAppear={appearCopy} />
       <Info setAppear={appearCopy} />
       {createModal && (
         <div
@@ -233,7 +237,7 @@ function App() {
             <button
               className="mt-8 mb-2 text-amber-950/80 opacity-70  border rounded-lg  border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
               onClick={handleCreateComment}>
-              방명록 남기기
+              글 남기기
             </button>
           </div>
         </div>
@@ -255,7 +259,7 @@ function App() {
             <button
               className="mt-6 text-amber-950/80 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
               onClick={handleDeleteComment}>
-              방명록 지우기
+              글 지우기
             </button>
           </div>
         </div>
