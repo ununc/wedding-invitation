@@ -26,92 +26,92 @@ export const Gallery = () => {
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-10">
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right} alt="" />
           </div>
         </div>
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-2">
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right2} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={left3} alt="" />
           </div>
-          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+          <div className="w-[4.9rem] h-[4.9rem] overflow-hidden rounded-lg">
             <img className="w-full h-full object-cover" src={right3} alt="" />
           </div>
         </div>
