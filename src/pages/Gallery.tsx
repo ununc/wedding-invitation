@@ -1,5 +1,17 @@
 import { AppearObserver } from '../components/AppearObserver';
 import { Section } from '../components/Section';
+const left =
+  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KMS_9729.jpg?alt=media&token=f9f6c6cf-2978-47f7-b3e3-31f71af61894';
+const right =
+  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KMS_9738.jpg?alt=media&token=06e46b95-a0a0-48dc-b4fc-7806170683ed';
+const left2 =
+  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/b-2.jpg?alt=media&token=8f472f27-75bf-416a-88af-9ca4808a540f';
+const right2 =
+  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/b-1.jpg?alt=media&token=bfba187b-555b-4634-8d19-c78139180fbe';
+const left3 =
+  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KakaoTalk_20240627_224543615_01.jpg?alt=media&token=99d2e8f5-88f2-4b49-bcc9-fdbf4b445ad3';
+const right3 =
+  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KakaoTalk_20240627_224543615.jpg?alt=media&token=70813d66-e9fc-43bc-9e2b-b69fd1c5df0e';
 
 export const Gallery = () => {
   return (
@@ -13,59 +25,95 @@ export const Gallery = () => {
         </h2>
       </AppearObserver>
       <AppearObserver>
-        <div className="flex gap-3.5 w-full justify-center items-center mt-10">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-        </div>
-        <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-        </div>
-      </AppearObserver>
-      <AppearObserver>
-        <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-        </div>
-        <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-        </div>
-      </AppearObserver>
-      <AppearObserver>
-        <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-        </div>
-        <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+        <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-10">
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right} alt="" />
+          </div>
         </div>
       </AppearObserver>
       <AppearObserver>
-        <div className="flex gap-3.5 w-full justify-center items-center mt-4">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-        </div>
-        <div className="flex mt-4 gap-3.5 w-full justify-center items-center">
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
-          <div className="w-[4.2rem] h-[4.2rem] border border-green-700 rounded-lg"></div>
+        <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-2">
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right2} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={left3} alt="" />
+          </div>
+          <div className="w-[4.5rem] h-[4.5rem] overflow-hidden rounded-lg">
+            <img className="w-full h-full object-cover" src={right3} alt="" />
+          </div>
         </div>
       </AppearObserver>
     </Section>

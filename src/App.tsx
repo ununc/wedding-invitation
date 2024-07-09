@@ -162,7 +162,7 @@ function App() {
 
       <Section>
         <AppearObserver>
-          <div className="w-full mt-11 mb-1.5 opacity-[0.55]">
+          <div className="w-full mt-16 mb-1.5 opacity-[0.55]">
             <Flower />
           </div>
         </AppearObserver>
