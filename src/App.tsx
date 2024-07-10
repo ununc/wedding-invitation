@@ -179,11 +179,15 @@ function App() {
                   <div
                     key={id}
                     className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
-                    <div className="flex gap-5 justify-between items-center">
+                    <div className="relative flex gap-5 justify-between items-center">
                       <div className="w-40 truncate mt-0.5">From. {name}</div>
-                      <button onClick={() => handleDelete(id)}>x</button>
+                      <button
+                        className=" absolute top-1 right-0"
+                        onClick={() => handleDelete(id)}>
+                        <div className="x-icon"></div>
+                      </button>
                     </div>
-                    <div className="break-words text-sm mt-2 p-0.5">
+                    <div className="break-words text-center text-sm mt-3 p-0.5">
                       {message}
                     </div>
                   </div>

@@ -56,6 +56,16 @@
   background-position: center;
 }
 
+.x-icon {
+  width: 0.7rem;
+  height: 0.7rem;
+  opacity: 0.5;
+  background-image: url('/x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .appear-active {
   animation: fade-out 1.2s ease-in-out;
   animation-fill-mode: forwards;
