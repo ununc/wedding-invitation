@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Section } from '../components/Section';
 import { AppearObserver } from '../components/AppearObserver';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
-import Video from '/intro/intros.webm';
+import Video from '/intro/intros.mp4';
 
 export const Intro = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
