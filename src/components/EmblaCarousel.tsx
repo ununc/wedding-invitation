@@ -3,7 +3,7 @@ import { Thumb } from './EmblaCarouselThumbsButton';
 import useEmblaCarousel from 'embla-carousel-react';
 
 export const EmblaCarousel = ({ index }: { index: number }) => {
-  const slides = Array.from(Array(10).keys());
+  const slides = Array.from(Array(28).keys());
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ startIndex: index });
@@ -26,13 +26,16 @@ export const EmblaCarousel = ({ index }: { index: number }) => {
     emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap());
   }, [emblaMainApi, emblaThumbsApi, setSelectedIndex]);
 
+  document.body.style.overflow = 'hidden';
   useEffect(() => {
     if (!emblaMainApi) return;
     onSelect();
 
     emblaMainApi.on('select', onSelect).on('reInit', onSelect);
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
   }, [emblaMainApi, onSelect]);
-
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaMainRef}>

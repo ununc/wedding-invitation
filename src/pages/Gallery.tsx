@@ -1,6 +1,9 @@
 import { AppearObserver } from '../components/AppearObserver';
 import { Section } from '../components/Section';
 
+const block1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+const block2 = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27];
+
 export const Gallery = ({
   setIndex,
 }: {
@@ -18,7 +21,7 @@ export const Gallery = ({
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-10">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((index) => {
+          {block1.map((index) => {
             return (
               <div
                 key={index + '1b'}
@@ -36,22 +39,20 @@ export const Gallery = ({
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-2">
-          {[12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27].map(
-            (index) => {
-              return (
-                <div
-                  key={index + '2b'}
-                  onClick={() => setIndex(index)}
-                  className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
-                  <img
-                    className="w-full h-full object-cover"
-                    src={`/thumb/thumb-${index}.jpg`}
-                    alt=""
-                  />
-                </div>
-              );
-            },
-          )}
+          {block2.map((index) => {
+            return (
+              <div
+                key={index + '2b'}
+                onClick={() => setIndex(index)}
+                className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
+                <img
+                  className="w-full h-full object-cover"
+                  src={`/thumb/thumb-${index}.jpg`}
+                  alt=""
+                />
+              </div>
+            );
+          })}
         </div>
       </AppearObserver>
       <AppearObserver>
