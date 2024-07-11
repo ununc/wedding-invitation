@@ -17,7 +17,6 @@ export const Location = ({ setAppear }: { setAppear: () => void }) => {
       </AppearObserver>
       <AppearObserver>
         <div className="mt-8 h-fit w-full">
-          {/* TODO 가능하면 지도 zoom 되도록 */}
           <div className="map h-48 opacity-90"></div>
         </div>
       </AppearObserver>
