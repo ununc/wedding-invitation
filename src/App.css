@@ -181,7 +181,10 @@ textarea {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  touch-action: pinch-zoom !important;
+}
+
+.zoom {
+  touch-action: auto !important;
 }
 
 .map-icon {
