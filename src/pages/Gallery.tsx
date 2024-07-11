@@ -1,50 +1,5 @@
 import { AppearObserver } from '../components/AppearObserver';
 import { Section } from '../components/Section';
-const left =
-  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KMS_9729.jpg?alt=media&token=f9f6c6cf-2978-47f7-b3e3-31f71af61894';
-const right =
-  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KMS_9738.jpg?alt=media&token=06e46b95-a0a0-48dc-b4fc-7806170683ed';
-const left2 =
-  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/b-2.jpg?alt=media&token=8f472f27-75bf-416a-88af-9ca4808a540f';
-const right2 =
-  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/b-1.jpg?alt=media&token=bfba187b-555b-4634-8d19-c78139180fbe';
-const left3 =
-  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KakaoTalk_20240627_224543615_01.jpg?alt=media&token=99d2e8f5-88f2-4b49-bcc9-fdbf4b445ad3';
-const right3 =
-  'https://firebasestorage.googleapis.com/v0/b/wedding-invitation-916e2.appspot.com/o/KakaoTalk_20240627_224543615.jpg?alt=media&token=70813d66-e9fc-43bc-9e2b-b69fd1c5df0e';
-
-const urlList1 = [
-  left,
-  right,
-  left,
-  right,
-  left,
-  right,
-  left,
-  right,
-  left,
-  right,
-  left,
-  right,
-];
-const urlList2 = [
-  left2,
-  right2,
-  left2,
-  right2,
-  left2,
-  right2,
-  left2,
-  right2,
-  left3,
-  right3,
-  left3,
-  right3,
-  left3,
-  right3,
-  left3,
-  right3,
-];
 
 export const Gallery = ({
   setIndex,
@@ -63,13 +18,17 @@ export const Gallery = ({
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-10">
-          {urlList1.map((url, index) => {
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((index) => {
             return (
               <div
-                key={url}
+                key={index + '1b'}
                 onClick={() => setIndex(index)}
                 className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
-                <img className="w-full h-full object-cover" src={url} alt="" />
+                <img
+                  className="w-full h-full object-cover"
+                  src={`/thumb/thumb-${index}.jpg`}
+                  alt=""
+                />
               </div>
             );
           })}
@@ -77,16 +36,22 @@ export const Gallery = ({
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-2">
-          {urlList2.map((url, index) => {
-            return (
-              <div
-                key={url}
-                onClick={() => setIndex(index + 12)}
-                className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
-                <img className="w-full h-full object-cover" src={url} alt="" />
-              </div>
-            );
-          })}
+          {[12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27].map(
+            (index) => {
+              return (
+                <div
+                  key={index + '2b'}
+                  onClick={() => setIndex(index)}
+                  className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={`/thumb/thumb-${index}.jpg`}
+                    alt=""
+                  />
+                </div>
+              );
+            },
+          )}
         </div>
       </AppearObserver>
       <AppearObserver>
