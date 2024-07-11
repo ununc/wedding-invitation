@@ -16,8 +16,8 @@ export const Location = ({ setAppear }: { setAppear: () => void }) => {
         </h2>
       </AppearObserver>
       <AppearObserver>
-        <div className="mt-8 h-fit w-full zoom">
-          <div className="map h-48 opacity-90 zoom"></div>
+        <div className="mt-8 h-fit w-full">
+          <div className="map h-48 opacity-90"></div>
         </div>
       </AppearObserver>
       <AppearObserver>

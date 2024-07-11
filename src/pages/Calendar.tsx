@@ -1,6 +1,5 @@
 import { Section } from '../components/Section';
 import { AppearObserver } from '../components/AppearObserver';
-import { Flower } from '../components/Flower';
 
 export const Calendar = () => {
   const date = new Date().getTime();
@@ -9,13 +8,11 @@ export const Calendar = () => {
   return (
     <Section>
       <AppearObserver>
-        <div className="w-full mt-20 mb-1.5 opacity-[0.55]">
-          <Flower />
-        </div>
-      </AppearObserver>
-      <AppearObserver>
-        <h2 className="text-sm text-amber-950 tracking-tighter opacity-40 text-center">
+        <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center mt-24">
           C A L E N D A R
+        </h2>
+        <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
+          일정
         </h2>
       </AppearObserver>
 

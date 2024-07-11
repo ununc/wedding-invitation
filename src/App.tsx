@@ -174,8 +174,11 @@ function App() {
           </div>
         </AppearObserver>
         <AppearObserver>
-          <h2 className="text-sm  text-amber-950 tracking-tighter opacity-40 text-center">
+          <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center">
             G U E S T &nbsp; B O O K
+          </h2>
+          <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
+            축하 인사
           </h2>
         </AppearObserver>
         <AppearObserver>
