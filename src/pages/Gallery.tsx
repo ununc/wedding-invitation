@@ -46,11 +46,15 @@ const urlList2 = [
   right3,
 ];
 
-export const Gallery = () => {
+export const Gallery = ({
+  setIndex,
+}: {
+  setIndex: (index: number) => void;
+}) => {
   return (
     <Section>
       <AppearObserver>
-        <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center mt-6">
+        <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center mt-10">
           G A L L E R Y
         </h2>
         <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
@@ -59,10 +63,11 @@ export const Gallery = () => {
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-10">
-          {urlList1.map((url) => {
+          {urlList1.map((url, index) => {
             return (
               <div
                 key={url}
+                onClick={() => setIndex(index)}
                 className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
                 <img className="w-full h-full object-cover" src={url} alt="" />
               </div>
@@ -72,15 +77,21 @@ export const Gallery = () => {
       </AppearObserver>
       <AppearObserver>
         <div className="flex flex-wrap gap-2 w-[23rem] mx-auto justify-center items-center mt-2">
-          {urlList2.map((url) => {
+          {urlList2.map((url, index) => {
             return (
               <div
                 key={url}
+                onClick={() => setIndex(index + 12)}
                 className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
                 <img className="w-full h-full object-cover" src={url} alt="" />
               </div>
             );
           })}
+        </div>
+      </AppearObserver>
+      <AppearObserver>
+        <div className="text-center text-xs text-neutral-700 opacity-40 mt-7">
+          사진을 눌러보세요
         </div>
       </AppearObserver>
     </Section>

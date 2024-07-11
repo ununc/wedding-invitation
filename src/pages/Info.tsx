@@ -7,7 +7,7 @@ import CopyIcon from '../components/CopyIcon';
 export const Info = ({ setAppear }: { setAppear: () => void }) => {
   return (
     <Section>
-      <div className="w-full mt-10">
+      <div className="w-full mt-12">
         <AppearObserver>
           <div className="w-full opacity-[0.55]">
             <Flower />

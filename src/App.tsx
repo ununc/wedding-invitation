@@ -12,11 +12,18 @@ import { database } from './firebase/firebase';
 import { AppearObserver } from './components/AppearObserver';
 import { Flower } from './components/Flower';
 import { Calendar } from './pages/Calendar';
+import { EmblaCarousel } from './components/EmblaCarousel';
 
 function App() {
   const [init, setInit] = useState(true);
   const [modalIndex, setModalIndex] = useState(0);
   const [appear, setAppear] = useState(false);
+
+  const [selectedIndex, setSelectedIndex] = useState(100);
+
+  const selectGalleryIndex = (index: number) => {
+    setSelectedIndex(index);
+  };
 
   const closeModal = () => {
     setModalIndex(0);
@@ -158,11 +165,11 @@ function App() {
       <Intro />
       <Invitation />
       <Interview setModalIndex={setModalIndex} />
-      <Gallery />
+      <Gallery setIndex={selectGalleryIndex} />
       <AnswerModal modalIndex={modalIndex} close={closeModal} />
       <Section>
         <AppearObserver>
-          <div className="w-full mt-16 mb-1.5 opacity-[0.55]">
+          <div className="w-full mt-20 mb-1.5 opacity-[0.55]">
             <Flower />
           </div>
         </AppearObserver>
@@ -212,6 +219,20 @@ function App() {
       <Calendar />
       <Location setAppear={appearCopy} />
       <Info setAppear={appearCopy} />
+      {selectedIndex !== 100 && (
+        <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center backdrop bg-black/80">
+          <div className="w-11/12 mb-1.5 text-sm flex justify-end text-neutral-100/90">
+            <button
+              onClick={() => setSelectedIndex(100)}
+              className="shrink-0 px-2">
+              닫기
+            </button>
+          </div>
+          <div className="w-11/12 h-[90%]  rounded-lg overflow-hidden">
+            <EmblaCarousel index={selectedIndex} />
+          </div>
+        </div>
+      )}
       {createModal && (
         <div
           className="fixed top-0 left-0 right-0 bottom-0 backdrop"

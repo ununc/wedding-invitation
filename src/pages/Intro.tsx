@@ -30,7 +30,7 @@ export const Intro = () => {
   }, []);
   return (
     <Section>
-      <div className="mt-3 mx-3 overflow-hidden rounded-xl">
+      <div className="mt-2.5 mx-3 overflow-hidden rounded-xl">
         <video
           preload="auto"
           className="intro-video shrink-0"

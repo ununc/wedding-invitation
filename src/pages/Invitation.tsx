@@ -4,7 +4,7 @@ import { AppearObserver } from '../components/AppearObserver';
 
 export const Invitation = () => {
   return (
-    <Section classNames="mt-4">
+    <Section classNames="mt-10">
       <AppearObserver>
         <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center">
           I N V I T A T I O N

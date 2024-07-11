@@ -2,24 +2,6 @@ const ModalContent = (number: number) => {
   if (number === 1) {
     return (
       <>
-        <div>- 형철 -</div>
-        <div>교회 청년부에서 리더로</div>
-        <div>같이 사역하면서 만났어요.</div>
-        <div>대표 리더였던 봄이가 교회 사역에</div>
-        <div>자주 콜링 해주어서</div>
-        <div>함께하는 시간이 많아졌죠.</div>
-        <div>그리고 주말에 만나서 같이 밥도 먹고</div>
-        <div>공부도 하고 이야기도 하면서</div>
-        <div>봄이에 대해서 더 알게 되었어요.</div>
-        <div>알게 되면 알게 될수록 마음에 들어서</div>
-        <div> 결혼하고 싶어졌답니다. </div>
-        <div>참 감사하죠!</div>
-      </>
-    );
-  }
-  if (number === 2) {
-    return (
-      <>
         <div>- 새봄 -</div>
         <div>교회 청년부에서 리더로</div>
         <div>같이 사역하면서 만났어요.</div>
@@ -38,6 +20,24 @@ const ModalContent = (number: number) => {
         <div>그리고 그 꿈을 꾼 지 2년 만에</div>
         <div>저희는 정말 결혼하게 되었답니다.</div>
         <div>너무 신기하죠!</div>
+      </>
+    );
+  }
+  if (number === 2) {
+    return (
+      <>
+        <div>- 형철 -</div>
+        <div>교회 청년부에서 리더로</div>
+        <div>같이 사역하면서 만났어요.</div>
+        <div>대표 리더였던 봄이가 교회 사역에</div>
+        <div>자주 콜링 해주어서</div>
+        <div>함께하는 시간이 많아졌죠.</div>
+        <div>그리고 주말에 만나서 같이 밥도 먹고</div>
+        <div>공부도 하고 이야기도 하면서</div>
+        <div>봄이에 대해서 더 알게 되었어요.</div>
+        <div>알게 되면 알게 될수록 마음에 들어서</div>
+        <div> 결혼하고 싶어졌답니다. </div>
+        <div>참 감사하죠!</div>
       </>
     );
   }
@@ -74,22 +74,6 @@ const ModalContent = (number: number) => {
   if (number === 5) {
     return (
       <>
-        <div>- 형철 -</div>
-        <div>사랑스럽고 지혜로운 봄이와</div>
-        <div>한 가족이 되어 평생 함께 나아갈 것을</div>
-        <div>약속하는 순간이기에</div>
-        <div>조금은 긴장되고 떨리지만</div>
-        <div>기쁘고 감사한 마음이 더 큽니다.</div>
-        <div>서로의 연약한 부분을 감싸주고</div>
-        <div>부족한 부분을 채워주며</div>
-        <div>사랑으로 아끼며</div>
-        <div>행복하게 살아봅시다!</div>
-      </>
-    );
-  }
-  if (number === 6) {
-    return (
-      <>
         <div>- 새봄 -</div>
         <div>세상에서 제일 든든하고 멋진 사람과</div>
         <div>평생을 함께한다니,</div>
@@ -102,6 +86,22 @@ const ModalContent = (number: number) => {
         <div>건강하게 손잡고 산책하고</div>
         <div>도란도란 이야기 나누며</div>
         <div>행복하게 삽시다.</div>
+      </>
+    );
+  }
+  if (number === 6) {
+    return (
+      <>
+        <div>- 형철 -</div>
+        <div>사랑스럽고 지혜로운 봄이와</div>
+        <div>한 가족이 되어 평생 함께 나아갈 것을</div>
+        <div>약속하는 순간이기에</div>
+        <div>조금은 긴장되고 떨리지만</div>
+        <div>기쁘고 감사한 마음이 더 큽니다.</div>
+        <div>서로의 연약한 부분을 감싸주고</div>
+        <div>부족한 부분을 채워주며</div>
+        <div>사랑으로 아끼며</div>
+        <div>행복하게 살아봅시다!</div>
       </>
     );
   }
