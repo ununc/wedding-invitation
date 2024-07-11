@@ -20,69 +20,69 @@ export const Calendar = () => {
       </AppearObserver>
 
       <AppearObserver>
-        <div className="mt-8 text-center text-15 text-neutral-700 opacity-75">
-          <div className="mt-2 text-sm">
-            <div className="wrapper">
-              <header>
-                <div className="nav">
-                  <button className="material-icons"> chevron_left </button>
-                  <p className="current-date">September 2022</p>
-                  <button className="material-icons"> chevron_right </button>
-                </div>
-              </header>
-              <div className="calendar">
-                <ul className="weeks">
-                  <li>Sun</li>
-                  <li>Mon</li>
-                  <li>Tue</li>
-                  <li>Wed</li>
-                  <li>Thu</li>
-                  <li>Fri</li>
-                  <li>Sat</li>
-                </ul>
-                <ul className="days">
-                  <li className="inactive">27</li>
-                  <li className="inactive">28</li>
-                  <li className="inactive">29</li>
-                  <li className="inactive">30</li>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                  <li>5</li>
-                  <li>6</li>
-                  <li>7</li>
-                  <li>8</li>
-                  <li>9</li>
-                  <li>10</li>
-                  <li>11</li>
-                  <li>12</li>
-                  <li>13</li>
-                  <li>14</li>
-                  <li>15</li>
-                  <li>16</li>
-                  <li>17</li>
-                  <li>18</li>
-                  <li>19</li>
-                  <li>20</li>
-                  <li>21</li>
-                  <li>22</li>
-                  <li>23</li>
-                  <li>24</li>
-                  <li>25</li>
-                  <li>26</li>
-                  <li>27</li>
-                  <li>28</li>
-                  <li>29</li>
-                  <li>30</li>
-                  <li>31</li>
-                </ul>
-              </div>
+        <div className="mt-8 mx-auto w-11/12 flex flex-col justify-center items-center text-15 text-neutral-700 opacity-60">
+          <div className="text-center">
+            <div className="text-base">시 월</div>
+          </div>
+          <div className="mt-4">
+            <div className="flex gap-7 justify-center items-center text-center py-2.5">
+              <div className="w-4">일</div>
+              <div className="w-4">월</div>
+              <div className="w-4">화</div>
+              <div className="w-4">수</div>
+              <div className="w-4">목</div>
+              <div className="w-4">금</div>
+              <div className="w-4">토</div>
+            </div>
+            <div className="h-1 border-t border-amber-950/60"></div>
+            <div className="flex gap-7 justify-center items-center text-center py-2.5">
+              <div className="w-4">&nbsp;</div>
+              <div className="w-4">&nbsp;</div>
+              <div className="w-4">1</div>
+              <div className="w-4">2</div>
+              <div className="w-4">3</div>
+              <div className="w-4">4</div>
+              <div className="w-4">5</div>
+            </div>
+            <div className="flex gap-7 justify-center items-center text-center py-2.5">
+              <div className="w-4">6</div>
+              <div className="w-4">7</div>
+              <div className="w-4">8</div>
+              <div className="w-4">9</div>
+              <div className="w-4">10</div>
+              <div className="w-4">11</div>
+              <div className="w-4">12</div>
+            </div>
+            <div className="flex gap-7 justify-center items-center text-center py-2.5">
+              <div className="w-4">13</div>
+              <div className="w-4">14</div>
+              <div className="w-4">15</div>
+              <div className="w-4">16</div>
+              <div className="w-4">17</div>
+              <div className="w-4">18</div>
+              <div className="w-4">19</div>
+            </div>
+            <div className="flex gap-7 justify-center items-center text-center py-2.5">
+              <div className="w-4">20</div>
+              <div className="w-4">21</div>
+              <div className="w-4">22</div>
+              <div className="w-4">23</div>
+              <div className="w-4">24</div>
+              <div className="w-4">25</div>
+              <div className="w-4">26</div>
+            </div>
+            <div className="flex gap-7 justify-center items-center text-center py-2.5">
+              <div className="w-4">27</div>
+              <div className="w-4">28</div>
+              <div className="w-4">29</div>
+              <div className="w-4">30</div>
+              <div className="w-4">31</div>
+              <div className="w-4">&nbsp;</div>
+              <div className="w-4">&nbsp;</div>
             </div>
           </div>
-          <div className="mt-2 text-sm">2024. 10. 09</div>
-          <div className="mt-2 text-sm">한글날 낮 12:00</div>
-          <div>D-Day {Math.ceil(d)}</div>
+          <div className="mt-5 text-15">한글날 낮 12:00</div>
+          <div className="mt-3 text-15">D-Day {Math.ceil(d)}</div>
         </div>
       </AppearObserver>
 
