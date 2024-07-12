@@ -18,11 +18,13 @@ export const Thumb: React.FC<PropType> = (props) => {
         onClick={onClick}
         type="button"
         className="embla-thumbs__slide__number">
-        <img
-          className="w-full h-full object-cover"
-          src={`/thumb/thumb-${index}.jpg`}
-          alt=""
-        />
+        <div className="rounded-lg overflow-hidden h-full w-full">
+          <img
+            className="w-full h-full object-cover"
+            src={`/thumb/thumb-${index}.jpg`}
+            alt=""
+          />
+        </div>
       </button>
     </div>
   );

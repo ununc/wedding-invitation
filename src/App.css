@@ -265,7 +265,7 @@ textarea {
 
 .embla {
   width: 100%;
-  height: calc(100% - 6.7rem);
+  height: calc(100% - 7rem);
   margin: auto;
   --slide-spacing: 1rem;
   --slide-size: 100%;
