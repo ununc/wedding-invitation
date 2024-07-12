@@ -184,25 +184,35 @@ function App() {
         <AppearObserver>
           <div className="w-full h-fit flex justify-center px-6 items-center overflow-hidden">
             <div className="w-11/12 h-96 overflow-y-scroll mt-8 px-3 flex flex-col gap-4">
-              {commentList.map(({ name, message, id }) => {
-                return (
-                  <div
-                    key={id}
-                    className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
-                    <div className="relative flex gap-5 justify-between items-center">
-                      <div className="w-40 truncate mt-0.5">From. {name}</div>
-                      <button
-                        className=" absolute top-1 right-0"
-                        onClick={() => handleDelete(id)}>
-                        <div className="x-icon"></div>
-                      </button>
+              {commentList?.length ? (
+                commentList.map(({ name, message, id }) => {
+                  return (
+                    <div
+                      key={id}
+                      className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
+                      <div className="relative flex gap-5 justify-between items-center">
+                        <div className="w-40 truncate mt-0.5">From. {name}</div>
+                        <button
+                          className=" absolute top-1 right-0"
+                          onClick={() => handleDelete(id)}>
+                          <div className="x-icon"></div>
+                        </button>
+                      </div>
+                      <div className="break-words text-center text-sm mt-3 p-0.5">
+                        {message}
+                      </div>
                     </div>
-                    <div className="break-words text-center text-sm mt-3 p-0.5">
-                      {message}
-                    </div>
+                  );
+                })
+              ) : (
+                <div
+                  onClick={handleCreateModal}
+                  className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
+                  <div className="w-full text-center">
+                    축하 인사를 작성해 주세요
                   </div>
-                );
-              })}
+                </div>
+              )}
             </div>
           </div>
         </AppearObserver>
