@@ -29,7 +29,7 @@ export const Intro = () => {
     };
   }, []);
   return (
-    <Section>
+    <Section classNames="no-zoom">
       <div className="mt-2.5 mx-3 overflow-hidden rounded-xl">
         <video
           preload="auto"
