@@ -26,7 +26,6 @@ export const EmblaCarousel = ({ index }: { index: number }) => {
     emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap());
   }, [emblaMainApi, emblaThumbsApi, setSelectedIndex]);
 
-  document.body.style.overflow = 'hidden';
   useEffect(() => {
     if (!emblaMainApi) return;
     onSelect();

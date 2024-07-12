@@ -10,6 +10,11 @@
   font-style: normal;
 }
 
+html,
+body {
+  touch-action: pan-y;
+}
+
 * {
   font-family: 'RIDIBatang';
   -ms-overflow-style: none;

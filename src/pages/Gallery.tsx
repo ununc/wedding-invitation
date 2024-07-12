@@ -9,6 +9,10 @@ export const Gallery = ({
 }: {
   setIndex: (index: number) => void;
 }) => {
+  const clickImg = (index: number) => {
+    setIndex(index);
+    document.body.style.overflow = 'hidden';
+  };
   return (
     <Section>
       <AppearObserver>
@@ -25,7 +29,7 @@ export const Gallery = ({
             return (
               <div
                 key={index + '1b'}
-                onClick={() => setIndex(index)}
+                onClick={() => clickImg(index)}
                 className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
                 <img
                   className="w-full h-full object-cover"
@@ -43,7 +47,7 @@ export const Gallery = ({
             return (
               <div
                 key={index + '2b'}
-                onClick={() => setIndex(index)}
+                onClick={() => clickImg(index)}
                 className="w-[4.9rem] h-[4.9rem] cursor-pointer overflow-hidden rounded-lg">
                 <img
                   className="w-full h-full object-cover"
