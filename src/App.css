@@ -14,7 +14,7 @@
   font-family: 'RIDIBatang';
   -ms-overflow-style: none;
   scrollbar-width: none;
-  touch-action: auto;
+  touch-action: pan-y;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -337,8 +337,4 @@ textarea {
 }
 .embla-thumbs__slide--selected .embla-thumbs__slide__number {
   color: var(--text-body);
-}
-
-.no-zoom {
-  touch-action: pan-y;
 }
