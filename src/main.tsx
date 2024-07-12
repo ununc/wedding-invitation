@@ -6,7 +6,7 @@ const regexp = /kakaotalk/i;
 if (navigator.userAgent.toLowerCase().match(regexp)) {
   location.href =
     'kakaotalk://web/openExternal?url=' +
-    encodeURIComponent('https://wedding-yhc-lsm.netlify.app');
+    encodeURIComponent('https://hc-sb-wedding-post.netlify.app/');
 } else {
   ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
 }

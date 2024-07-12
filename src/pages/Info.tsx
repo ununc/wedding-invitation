@@ -92,7 +92,7 @@ export const Info = ({ setAppear }: { setAppear: () => void }) => {
       </div>
       <div className="mt-12 border-t-2 border-dashed border-amber-900 h-32 w-full text-sm flex flex-col items-center justify-center text-amber-950 opacity-40">
         <ClipBoard
-          text="https://wedding-yhc-lsm.netlify.app"
+          text="https://hc-sb-wedding-post.netlify.app/"
           setAppear={setAppear}>
           <div className="flex items-center">
             <div>링크주소 복사하기</div>
