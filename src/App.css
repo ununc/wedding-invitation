@@ -14,7 +14,8 @@
   font-family: 'RIDIBatang';
   -ms-overflow-style: none;
   scrollbar-width: none;
-  touch-action: pan-y;
+  /* touch-action: pan-y; */
+  touch-action: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
