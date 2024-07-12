@@ -266,8 +266,7 @@ textarea {
 /*  */
 .embla {
   width: 100%;
-  /* height: calc(100% - 5rem); */
-  height: 100vh;
+  height: calc(100% - 10rem);
   height: -webkit-fill-available;
   height: fill-available;
   margin: auto;
