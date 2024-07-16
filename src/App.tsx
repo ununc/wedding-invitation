@@ -234,14 +234,14 @@ function App() {
       <Info setAppear={appearCopy} />
       {selectedIndex !== 100 && (
         <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center backdrop bg-black/80">
-          <div className="w-11/12 mb-1.5 text-sm flex justify-end text-neutral-100/90">
+          <div className="max-w-[40rem] w-11/12 mb-2 text-sm flex justify-end text-neutral-100/90">
             <button
               onClick={() => setSelectedIndex(100)}
-              className="shrink-0 px-2">
+              className="shrink-0 px-1">
               닫기
             </button>
           </div>
-          <div className="w-11/12 h-[90%]  rounded-lg overflow-hidden">
+          <div className="max-w-[40rem] w-11/12 h-[90%]  rounded-lg overflow-hidden">
             <EmblaCarousel index={selectedIndex} />
           </div>
         </div>

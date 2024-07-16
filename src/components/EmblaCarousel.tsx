@@ -3,7 +3,7 @@ import { Thumb } from './EmblaCarouselThumbsButton';
 import useEmblaCarousel from 'embla-carousel-react';
 
 export const EmblaCarousel = ({ index }: { index: number }) => {
-  const slides = Array.from(Array(28).keys());
+  const slides = Array.from(Array(24).keys());
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ startIndex: index });
@@ -44,7 +44,7 @@ export const EmblaCarousel = ({ index }: { index: number }) => {
               <div className="rounded-lg overflow-hidden h-full w-full">
                 <img
                   className="w-full h-full object-cover"
-                  src="qna/two-two.jpg"
+                  src="main/sample1.jpg"
                   alt=""
                 />
               </div>
