@@ -170,7 +170,7 @@ function App() {
     }, 1800);
     setTimeout(() => {
       getImg();
-    }, 3600);
+    }, 3000);
   }, []);
   return (
     <div className={init ? 'h-screen overflow-y-hidden relative' : ''}>
