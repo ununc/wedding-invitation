@@ -44,7 +44,7 @@ export const EmblaCarousel = ({ index }: { index: number }) => {
               <div className="rounded-lg overflow-hidden h-full w-full">
                 <img
                   className="w-full h-full object-cover"
-                  src="main/sample1.jpg"
+                  src={`main/sample${index}.jpg`}
                   alt=""
                 />
               </div>

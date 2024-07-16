@@ -300,7 +300,7 @@ textarea {
 }
 .embla-thumbs {
   --thumbs-slide-spacing: 0.8rem;
-  margin-top: var(--thumbs-slide-spacing);
+  margin-top: 1rem;
 }
 .embla-thumbs__viewport {
   overflow: hidden;
@@ -333,6 +333,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4.5rem;
+  height: 5.8rem;
   width: 100%;
 }
