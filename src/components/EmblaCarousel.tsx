@@ -2,9 +2,13 @@ import { useEffect, useCallback, useState } from 'react';
 import { Thumb } from './EmblaCarouselThumbsButton';
 import useEmblaCarousel from 'embla-carousel-react';
 
-export const EmblaCarousel = ({ index }: { index: number }) => {
-  const slides = Array.from(Array(24).keys());
-
+export const EmblaCarousel = ({
+  index,
+  slides,
+}: {
+  index: number;
+  slides: number[];
+}) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ startIndex: index });
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({

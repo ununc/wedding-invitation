@@ -154,162 +154,180 @@ function App() {
       });
   };
 
+  const slides = Array.from(Array(24).keys());
+
+  const getImg = () => {
+    slides.forEach((index) => {
+      const temp = new Image();
+      temp.src = `main/sample${index}.jpg`;
+    });
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setInit(false);
-    }, 1500);
-    loadComment();
+      loadComment();
+    }, 1800);
+    setTimeout(() => {
+      getImg();
+    }, 3600);
   }, []);
   return (
     <div className={init ? 'h-screen overflow-y-hidden relative' : ''}>
       <Intro />
       <Invitation />
-      <Interview setModalIndex={setModalIndex} />
-      <Gallery setIndex={selectGalleryIndex} />
-      <AnswerModal modalIndex={modalIndex} close={closeModal} />
-      <Section>
-        <AppearObserver>
-          <div className="w-full mt-20 mb-1.5 opacity-[0.55]">
-            <Flower />
-          </div>
-        </AppearObserver>
-        <AppearObserver>
-          <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center">
-            G U E S T &nbsp; B O O K
-          </h2>
-          <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
-            축하 인사
-          </h2>
-        </AppearObserver>
-        <AppearObserver>
-          <div className="w-full h-fit flex justify-center px-6 items-center overflow-hidden">
-            <div className="w-11/12 h-96 overflow-y-scroll mt-8 px-3 flex flex-col gap-4">
-              {commentList?.length ? (
-                commentList.map(({ name, message, id }) => {
-                  return (
+      {!init && (
+        <>
+          <Interview setModalIndex={setModalIndex} />
+          <Gallery setIndex={selectGalleryIndex} />
+          <AnswerModal modalIndex={modalIndex} close={closeModal} />
+          <Section>
+            <AppearObserver>
+              <div className="w-full mt-20 mb-1.5 opacity-[0.55]">
+                <Flower />
+              </div>
+            </AppearObserver>
+            <AppearObserver>
+              <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center">
+                G U E S T &nbsp; B O O K
+              </h2>
+              <h2 className="text-sm mt-1 text-amber-950 opacity-[0.45] text-center">
+                축하 인사
+              </h2>
+            </AppearObserver>
+            <AppearObserver>
+              <div className="w-full h-fit flex justify-center px-6 items-center overflow-hidden">
+                <div className="w-11/12 h-96 overflow-y-scroll mt-8 px-3 flex flex-col gap-4">
+                  {commentList?.length ? (
+                    commentList.map(({ name, message, id }) => {
+                      return (
+                        <div
+                          key={id}
+                          className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
+                          <div className="relative flex gap-5 justify-between items-center">
+                            <div className="w-40 truncate mt-0.5">
+                              From. {name}
+                            </div>
+                            <button
+                              className=" absolute top-1 right-0"
+                              onClick={() => handleDelete(id)}>
+                              <div className="x-icon"></div>
+                            </button>
+                          </div>
+                          <div className="break-words text-center text-sm mt-3 p-0.5">
+                            {message}
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
                     <div
-                      key={id}
+                      onClick={handleCreateModal}
                       className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
-                      <div className="relative flex gap-5 justify-between items-center">
-                        <div className="w-40 truncate mt-0.5">From. {name}</div>
-                        <button
-                          className=" absolute top-1 right-0"
-                          onClick={() => handleDelete(id)}>
-                          <div className="x-icon"></div>
-                        </button>
-                      </div>
-                      <div className="break-words text-center text-sm mt-3 p-0.5">
-                        {message}
+                      <div className="w-full text-center">
+                        축하 인사를 작성해 주세요
                       </div>
                     </div>
-                  );
-                })
-              ) : (
-                <div
-                  onClick={handleCreateModal}
-                  className="bg-white shadow-md rounded-lg p-4 text-amber-950/60 border border-amber-950/30 border-dashed">
-                  <div className="w-full text-center">
-                    축하 인사를 작성해 주세요
-                  </div>
+                  )}
                 </div>
-              )}
-            </div>
-          </div>
-        </AppearObserver>
-        <AppearObserver>
-          <div className="w-full flex justify-center items-center mt-9">
-            <button
-              onClick={handleCreateModal}
-              className="relative w-72 cursor-pointer">
-              <div className="w-full text-center h-9 rounded-lg"></div>
-              <div className="absolute absolute-center text-sm text-amber-950/80 py-1.5 px-2 cursor-pointer rounded-lg border-amber-950/80 border border-dashed opacity-60 text-center">
-                축하 인사 전하기
               </div>
-            </button>
-          </div>
-        </AppearObserver>
-      </Section>
-      <Calendar />
-      <Location setAppear={appearCopy} />
-      <Info setAppear={appearCopy} />
-      {selectedIndex !== 100 && (
-        <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center backdrop bg-black/80">
-          <div className="max-w-[40rem] w-11/12 mb-2 text-sm flex justify-end text-neutral-100/90">
-            <button
-              onClick={() => setSelectedIndex(100)}
-              className="shrink-0 px-1">
-              닫기
-            </button>
-          </div>
-          <div className="max-w-[40rem] w-11/12 h-[90%]  rounded-lg overflow-hidden">
-            <EmblaCarousel index={selectedIndex} />
-          </div>
-        </div>
-      )}
-      {createModal && (
-        <div
-          className="fixed top-0 left-0 right-0 bottom-0 backdrop"
-          onClick={handleCloseModal}>
-          <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
-            <textarea
-              className="w-full mt-1.5 h-52 rounded-lg p-4 border border-neutral-300 focus:border-amber-900/40 opacity-80 resize-none"
-              placeholder="내용"
-              onInput={handleMessage}
-              value={message}
-            />
-            <div className="flex mt-5 gap-3">
-              <input
-                type="text"
-                className="flex-shrink w-1/2 rounded-lg border border-neutral-300 p-2 opacity-80 focus:border-amber-900/40"
-                placeholder="이름"
-                onInput={handleName}
-                value={name}
-              />
-              <input
-                type="password"
-                className="flex-shrink w-1/2 rounded-lg border border-neutral-300 p-2 opacity-80 focus:border-amber-900/40"
-                placeholder="비밀번호"
-                onInput={handlePass}
-                value={pass}
-              />
+            </AppearObserver>
+            <AppearObserver>
+              <div className="w-full flex justify-center items-center mt-9">
+                <button
+                  onClick={handleCreateModal}
+                  className="relative w-72 cursor-pointer">
+                  <div className="w-full text-center h-9 rounded-lg"></div>
+                  <div className="absolute absolute-center text-sm text-amber-950/80 py-1.5 px-2 cursor-pointer rounded-lg border-amber-950/80 border border-dashed opacity-60 text-center">
+                    축하 인사 전하기
+                  </div>
+                </button>
+              </div>
+            </AppearObserver>
+          </Section>
+          <Calendar />
+          <Location setAppear={appearCopy} />
+          <Info setAppear={appearCopy} />
+          {selectedIndex !== 100 && (
+            <div className="fixed top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center backdrop bg-black/80">
+              <div className="max-w-[40rem] w-11/12 mb-2 text-sm flex justify-end text-neutral-100/90">
+                <button
+                  onClick={() => setSelectedIndex(100)}
+                  className="shrink-0 px-1">
+                  닫기
+                </button>
+              </div>
+              <div className="max-w-[40rem] w-11/12 h-[90%]  rounded-lg overflow-hidden">
+                <EmblaCarousel index={selectedIndex} slides={slides} />
+              </div>
             </div>
-            <button
-              className="mt-8 mb-2 text-amber-950/80 opacity-70  border rounded-lg  border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
-              onClick={handleCreateComment}>
-              글 남기기
-            </button>
-          </div>
-        </div>
-      )}
-      {deleteTarget && (
-        <div
-          className="fixed top-0 left-0 right-0 bottom-0 backdrop"
-          onClick={handleCloseDeleteModal}>
-          <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
-            <div className="flex mt-5 gap-3">
-              <input
-                type="password"
-                className="flex-shrink w-full rounded-lg border border-amber-900 p-2 opacity-80"
-                placeholder="비밀번호"
-                onInput={handlePass}
-                value={pass}
-              />
+          )}
+          {createModal && (
+            <div
+              className="fixed top-0 left-0 right-0 bottom-0 backdrop"
+              onClick={handleCloseModal}>
+              <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
+                <textarea
+                  className="w-full mt-1.5 h-52 rounded-lg p-4 border border-neutral-300 focus:border-amber-900/40 opacity-80 resize-none"
+                  placeholder="내용"
+                  onInput={handleMessage}
+                  value={message}
+                />
+                <div className="flex mt-5 gap-3">
+                  <input
+                    type="text"
+                    className="flex-shrink w-1/2 rounded-lg border border-neutral-300 p-2 opacity-80 focus:border-amber-900/40"
+                    placeholder="이름"
+                    onInput={handleName}
+                    value={name}
+                  />
+                  <input
+                    type="password"
+                    className="flex-shrink w-1/2 rounded-lg border border-neutral-300 p-2 opacity-80 focus:border-amber-900/40"
+                    placeholder="비밀번호"
+                    onInput={handlePass}
+                    value={pass}
+                  />
+                </div>
+                <button
+                  className="mt-8 mb-2 text-amber-950/80 opacity-70  border rounded-lg  border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
+                  onClick={handleCreateComment}>
+                  글 남기기
+                </button>
+              </div>
             </div>
-            <button
-              className="mt-6 text-amber-950/80 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
-              onClick={handleDeleteComment}>
-              글 지우기
-            </button>
+          )}
+          {deleteTarget && (
+            <div
+              className="fixed top-0 left-0 right-0 bottom-0 backdrop"
+              onClick={handleCloseDeleteModal}>
+              <div className="absolute absolute-center text-15 text-neutral-700 rounded-lg bg-white p-6 shadow-lg flex flex-col justify-center items-center mt-1 w-11/12 mx-auto">
+                <div className="flex mt-5 gap-3">
+                  <input
+                    type="password"
+                    className="flex-shrink w-full rounded-lg border border-amber-900 p-2 opacity-80"
+                    placeholder="비밀번호"
+                    onInput={handlePass}
+                    value={pass}
+                  />
+                </div>
+                <button
+                  className="mt-6 text-amber-950/80 opacity-70  border rounded-lg border-amber-950 border-dashed py-1.5 px-3 cursor-pointer"
+                  onClick={handleDeleteComment}>
+                  글 지우기
+                </button>
+              </div>
+            </div>
+          )}
+          <div
+            className={
+              'copy bg-slate-800 text-sm text-slate-100 pt-2 px-3 rounded-lg ' +
+              (appear ? 'appear-copy' : 'hidden')
+            }>
+            복사되었습니다
           </div>
-        </div>
+        </>
       )}
-      <div
-        className={
-          'copy bg-slate-800 text-sm text-slate-100 pt-2 px-3 rounded-lg ' +
-          (appear ? 'appear-copy' : 'hidden')
-        }>
-        복사되었습니다
-      </div>
     </div>
   );
 }
