@@ -46,11 +46,14 @@ export const EmblaCarousel = ({
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               <div className="rounded-lg overflow-hidden h-full w-full">
-                <img
-                  className="w-full h-full object-cover"
-                  src={`main/sample99.avif`}
-                  alt=""
-                />
+                <picture>
+                  <source src={`main/sample99.avif`} type="image/avif" />
+                  <img
+                    className="w-full h-full object-cover"
+                    src={`main/sample99.png`}
+                    alt=""
+                  />
+                </picture>
               </div>
             </div>
           ))}
