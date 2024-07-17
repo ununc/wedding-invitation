@@ -159,7 +159,7 @@ function App() {
   const getImg = () => {
     slides.forEach((index) => {
       const temp = new Image();
-      temp.src = `main/sample${index}.jpg`;
+      temp.src = `gallery/sample${index}.avif`;
     });
   };
 

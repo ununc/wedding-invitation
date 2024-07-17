@@ -47,10 +47,13 @@ export const EmblaCarousel = ({
             <div className="embla__slide" key={index}>
               <div className="rounded-lg overflow-hidden h-full w-full">
                 <picture>
-                  <source src={`main/sample99.avif`} type="image/avif" />
+                  <source
+                    src={`gallery/sample${index}.avif`}
+                    type="image/avif"
+                  />
                   <img
                     className="w-full h-full object-cover"
-                    src={`main/sample99.avif`}
+                    src={`gallery/sample${index}.avif`}
                     alt=""
                   />
                 </picture>
