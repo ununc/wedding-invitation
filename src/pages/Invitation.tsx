@@ -1,10 +1,39 @@
 import { Section } from '../components/Section';
 import { Flower } from '../components/Flower';
 import { AppearObserver } from '../components/AppearObserver';
-
+import Video from '/invitation/invitation.webm';
+import { useEffect, useRef } from 'react';
 export const Invitation = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = false;
+      videoRef.current.volume = 0.5;
+      setTimeout(() => {
+        if (videoRef.current) {
+          videoRef.current.currentTime = 0;
+        }
+      }, 450);
+    }
+  }, []);
   return (
     <Section classNames="mt-10">
+      <div className="rounded-lg overflow-hidden mx-2.5 mt-4 mb-20 h-fit">
+        <video
+          preload="auto"
+          className="shrink-0"
+          poster="prevent"
+          playsInline
+          autoPlay
+          muted
+          controls
+          loop
+          ref={videoRef}>
+          <source src={Video} type="video/mp4" />
+        </video>
+      </div>
+
       <AppearObserver>
         <h2 className="text-[0.625rem] text-amber-950 tracking-tighter opacity-40 text-center">
           I N V I T A T I O N
