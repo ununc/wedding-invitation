@@ -21,7 +21,7 @@ export const Invitation = () => {
 
   useEffect(() => {
     if (videoRef?.current) {
-      videoRef.current.addEventListener('canplay', () => {
+      videoRef.current.addEventListener('loadeddata', () => {
         initVideo();
       });
     }
@@ -35,7 +35,6 @@ export const Invitation = () => {
           poster="prevent"
           playsInline
           muted
-          controls
           ref={videoRef}>
           <source src={Video} type="video/mp4" />
         </video>
