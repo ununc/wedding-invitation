@@ -34,6 +34,8 @@ export const Invitation = () => {
           className="shrink-0"
           poster="prevent"
           playsInline
+          autoPlay
+          loop
           muted
           ref={videoRef}>
           <source src={Video} type="video/mp4" />
