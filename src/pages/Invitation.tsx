@@ -37,6 +37,7 @@ export const Invitation = () => {
           autoPlay
           loop
           muted
+          controls
           ref={videoRef}>
           <source src={Video} type="video/mp4" />
         </video>
