@@ -10,7 +10,7 @@ export const Invitation = () => {
   const initVideo = () => {
     if (videoRef?.current) {
       videoRef.current.muted = false;
-      videoRef.current.volume = 0.5;
+      videoRef.current.volume = 0.7;
       setTimeout(() => {
         if (videoRef.current) {
           videoRef.current.currentTime = 0;
@@ -34,9 +34,9 @@ export const Invitation = () => {
           className="shrink-0"
           poster="prevent"
           playsInline
-          autoPlay
           loop
           muted
+          autoPlay
           controls
           ref={videoRef}>
           <source src={Video} type="video/mp4" />
