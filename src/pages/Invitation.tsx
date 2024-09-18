@@ -1,13 +1,14 @@
+import { useEffect, useRef } from 'react';
 import { Section } from '../components/Section';
 import { Flower } from '../components/Flower';
 import { AppearObserver } from '../components/AppearObserver';
-import Video from '/invitation/invitation.webm';
-import { useEffect, useRef } from 'react';
+import Video from '/invitation/invitation.mp4';
+
 export const Invitation = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
-    if (videoRef.current) {
+  const initVideo = () => {
+    if (videoRef?.current) {
       videoRef.current.muted = false;
       videoRef.current.volume = 0.5;
       setTimeout(() => {
@@ -15,6 +16,14 @@ export const Invitation = () => {
           videoRef.current.currentTime = 0;
         }
       }, 450);
+    }
+  };
+
+  useEffect(() => {
+    if (videoRef?.current) {
+      videoRef.current.addEventListener('canplay', () => {
+        initVideo();
+      });
     }
   }, []);
   return (
