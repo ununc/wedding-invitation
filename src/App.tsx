@@ -197,7 +197,7 @@ function App() {
             </AppearObserver>
             <AppearObserver>
               <div className="w-full h-fit flex justify-center px-6 items-center overflow-hidden">
-                <div className="w-11/12 h-96 overflow-y-scroll mt-8 px-3 flex flex-col gap-4">
+                <div className="w-11/12 h-[30rem] overflow-y-scroll mt-8 px-3 flex flex-col gap-4">
                   {commentList?.length ? (
                     commentList.map(({ name, message, id }) => {
                       return (
