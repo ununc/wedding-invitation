@@ -336,12 +336,3 @@ textarea {
   height: 5.8rem;
   width: 100%;
 }
-
-video::-webkit-media-controls-playback-rate-button {
-  display: none !important;
-}
-
-/* 속도 제어 패널 전체를 숨길 수 있음 */
-video::-webkit-media-controls-speed-controls {
-  display: none !important;
-}
