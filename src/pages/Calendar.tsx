@@ -3,8 +3,8 @@ import { AppearObserver } from '../components/AppearObserver';
 
 export const Calendar = () => {
   const date = new Date().getTime();
-  const wedding = new Date('2024-10-09').getTime();
-  const d = (wedding - date) / 1000 / 60 / 60 / 24;
+  const wedding = new Date('2024-10-10').getTime();
+  const d = (date - wedding) / 1000 / 60 / 60 / 24;
   return (
     <Section>
       <AppearObserver>
@@ -84,7 +84,7 @@ export const Calendar = () => {
             </div>
           </div>
           <div className="mt-5 text-base text-neutral-700 opacity-80">
-            D-Day {Math.ceil(d)}
+            부부가 된 지 {Math.ceil(d)}일째
           </div>
         </div>
       </AppearObserver>
